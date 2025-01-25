@@ -5,132 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finpick - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
     <link href="assets/css/custom.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,
+600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#F7F7F7] p-5 font-poppins">
+<body class="bg-[#F7F7F7] p-5">
 
-    <header class="mb-5">
-        <div id="navbar" class="bg-white p-4 rounded-lg shadow flex justify-between items-center">
-            <img src="assets/images/Logo.png" alt="Logo" class="h-10">
-            <ul class="flex gap-8 text-gray-700">
-                <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
-                <li><a href="ipo-updates.html" class="hover:text-blue-500">IPO</a></li>
-                <li><a href="about.html" class="hover:text-blue-500">FAQs</a></li>
-                <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
-            </ul>
-        </div>
+    <header>
+        <div id="navbar"></div>
     </header>
 
-    <div class="h-auto w-full flex flex-col lg:flex-row justify-between p-8 bg-white rounded-lg shadow mt-7">
-        <div class="lg:max-w-[60%]">
-            <h1 class="text-[40px] font-bold leading-[60px] mb-4">Discover the hottest IPOs this week</h1>
-            <p class="mb-4 text-gray-600">
-                Take the first step toward financial growth by opening your Demat account with us. Simplify your trading 
-                and investing experience with a secure, user-friendly platform tailored for modern investors.
-            </p>
+    <div class="h-[530px] w-full flex  justify-between p-8 bg-white rounded-lg mt-7">
+        <div class="max-w-[730px]">
+            <div class="text-[40px] font-bold leading-[60px] mb-4">Discover the hottest IPOs this week</div>
+            <div class="mb-4">
+                Take the first step toward financial growth by opening your Demat
+                account with us. Simplify your trading and investing experience with a
+                secure, user-friendly platform tailored for modern investors.
+            </div>
             <div class="flex gap-4">
-                <button class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600">Explore IPOs</button>
-                <button class="border-2 border-blue-500 text-blue-500 py-2 px-6 rounded-md hover:bg-blue-100">Learn More</button>
+                <div class="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex justify-between items-center">Explore IPOs</div>
+                <div class="border-2 border-blue-500 text-blue-500 py-2 px-6 rounded-md cursor-pointer">Learn More</div>
             </div>
         </div>
-        <div class="relative mt-5 lg:mt-0 lg:w-[40%]">
-            <img src="assets/images/Illustration.png" alt="Illustration" class="w-full">
-            <img src="assets/images/Floating Card.png" alt="Floating Card" class="absolute top-[80%] lg:top-[60%] lg:right-[20%]">
+
+        <div class="">
+            <img src="assets/images/Illustration.png" alt="Illustration" class="w-full " />
+            <img src="assets/images/Floating Card.png" alt="Floating Card" class="absolute top-[434px] right-[480px]" />
         </div>
     </div>
 
-    <div class="bg-white mt-5 p-10 rounded-lg shadow">
-        <div class="flex justify-between items-center mb-6">
-            <div>
-                <h2 class="text-[40px] font-bold leading-[60px]">Latest IPO Updates</h2>
-                <p class="text-[20px] text-gray-600">Stay informed about the latest IPOs in the market.</p>
-            </div>
-            <a href="#" class="text-blue-500 hover:underline">Explore All IPOs</a>
-        </div>
-        <table class="table-auto w-full text-left border-collapse border border-gray-200">
-            <thead class="bg-gray-100">
-                <tr>
-                    <th class="border border-gray-200 p-2">Company</th>
-                    <th class="border border-gray-200 p-2">Opening Date</th>
-                    <th class="border border-gray-200 p-2">Closing Date</th>
-                    <th class="border border-gray-200 p-2">Listing Date</th>
-                    <th class="border border-gray-200 p-2">Issue Price</th>
-                    <th class="border border-gray-200 p-2">Lot Size</th>
-                    <th class="border border-gray-200 p-2">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="border border-gray-200 p-2">Company</td>
-                    <td class="border border-gray-200 p-2">Opening Date</td>
-                    <td class="border border-gray-200 p-2">Closing Date</td>
-                    <td class="border border-gray-200 p-2">Listing Date</td>
-                    <td class="border border-gray-200 p-2">Issue Price</td>
-                    <td class="border border-gray-200 p-2">Lot Size</td>
-                    <td class="border border-gray-200 p-2">Status</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="bg-white mt-5 p-10 rounded-lg shadow">
-        <h3 class="text-[30px] font-bold mb-4">Our Services</h3>
-        <div class="grid gap-8 md:grid-cols-3">
-            <div>
-                <h4 class="font-bold text-lg mb-2">Initial Public Offering (IPO)</h4>
-                <ul class="list-disc list-inside text-gray-600">
-                    <li>IPO List</li>
-                    <li>IPO Live Subscription</li>
-                    <li>IPO Live GMP</li>
-                    <li>IPO Analysis</li>
-                    <li>IPO Allotment</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-lg mb-2">Open a Demat Account</h4>
-                <p class="text-gray-600 mb-2">Open a paperless demat account and apply for IPOs with a single-click UPI-based application.</p>
-                <button class="text-blue-500 underline">Get your Demat Account</button>
-            </div>
-            <div>
-                <h4 class="font-bold text-lg mb-2">FAQs</h4>
-                <ul class="list-disc list-inside text-gray-600">
-                    <li>How to open a demat account?</li>
-                    <li>What is the latest IPO GMP?</li>
-                    <li>How to check the allotment status?</li>
-                </ul>
-                <button class="text-blue-500 underline">Know more</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-white mt-10 p-6 rounded-lg shadow">
-        <h3 class="text-[30px] font-bold mb-4">Stay Connected, Stay Updated</h3>
-        <p class="text-gray-600 mb-6">
-            At Finnpick, we provide timely stock market updates. Have questions, feedback, or need assistance? We’re here to help!
-        </p>
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <img src="assets/images/social icons.png" alt="Social Icons" class="w-[200px]">
-            </div>
-            <div>
-                <img src="assets/images/Group 39481.png" alt="Additional Graphics" class="w-[200px]">
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-white mt-10 p-6 rounded-lg shadow">
+    <div class="bg-white mt-5 p-10">
         <div class="flex justify-between items-center">
-            <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12">
-            <ul class="flex gap-6 text-gray-700">
-                <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
-                <li><a href="ipo-updates.html" class="hover:text-blue-500">IPO</a></li>
-                <li><a href="about.html" class="hover:text-blue-500">FAQs</a></li>
-                <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
-            </ul>
+            <div class="">
+                <div class="text-[40px] font-bold leading-[60px]">Latest IPO Updates</div>
+                <div class="text-[20px] font-semibold leading-[60px]">Stay informed about the latest IPOs in the market.</div>
+            </div>
+            <div class="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex justify-between items-center">Explore All IPOs</div>
         </div>
-        <p class="mt-4 text-gray-500 text-sm">© 2025 Finnpick. All rights reserved.</p>
-    </footer>
+        <div>
+            <table class="table-auto w-full text-left border-collapse">
+                <thead class="bg-[#F1FCFA]">
+                    <tr>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">Company</th>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+                        </th>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+                        </th>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+                        </th>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Issue Price
+                        </th>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Lot Size
+                        </th>
+                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-transparent">
+                        <td class="p-2">Company</td>
+                        <td class="p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+                        </td>
+                        <td class="p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+                        </td>
+                        <td class="p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+                        </td>
+                        <td class="p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Issue Price
+                        </td>
+                        <td class="p-2">
+                            <span class="text-[#D1D1D1] px-4">|</span> Lot Size
+                        </td>
+                        <td class="p-2">
+                            <div class="flex items-center">
+                                <span class="text-[#D1D1D1] px-4">|</span>
+                                <span class="bg-[#2563EB] bg-opacity-30 border border-[#2563EB] text-[#2563EB] rounded-full text-center w-full py-1">Status</span>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+        </div>
+    </div>
 
+    <div class="">
+        <div class="flex flex-col justify-centre items-center ">
+            <div class="text-10 leading-[60px] text-[#2563EB]">Our Services</div>
+            <div>Expert IPO insights and real-time updates to guide your investments.</div>
+        </div>
+        <div>
+            <div>
+                <div>Initial Public Offering (IPO)</div>
+                <div>
+                    <ol>
+                        <li>IPO List</li>
+                        <li>IPO Live Subscription</li>
+                        <li>IPO Live GMP</li>
+                        <li>IPO Analysis</li>
+                        <li>IPO Allotment</li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <div>Open a Demat Account</div>
+                <div>Open paperless demat account. apply ipo with a single click UPI based application</div>
+                <div>Get your Demat Account</div>
+            </div>
+            <div>
+                <div>FAQs</div>
+                <div>
+                    <ol>
+                        <li>How to open demat account?</li>
+                        <li>What is the latest IPO GMP?</li>
+                        <li>How to check the allotment status?</li>
+                       
+                    </ol>
+                </div>
+                <div>know more ?</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div>Create Your Demat Account Now</div>
+            <div>Zero Account Opening Charges</div>
+            <div>Open Your Demat Account in 5 mins</div>
+        </div>
+        <div><img src="assets/images/channels4_profile 1.png" alt=""></div>
+    </div>
+
+    <div>
+        <div>Stay Connected, Stay Updated</div>
+        <div>At Finnpick, we provide timely stock market updates. Have questions, feedback, or need assistance? We’re here to help!</div>
+        <div>
+            <div><img src="assets/images/social icons.png" alt=""></div>
+            <div><img src="assets/images/Group 39481.png" alt=""></div>
+        </div>
+    </div>
+
+    <footer class="bg-whiteh-[92px] w-full px-10 py-4  rounded-lg ">
+        
+            <nav class="flex justify-between items-center">
+              <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
+              <ul class="flex gap-8">
+                <li><a href="index.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Home</a></li>
+                <li><a href="ipo-updates.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">IPO</a></li>
+                <li><a href="about.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">FAQs</a></li>
+                <li><a href="contact.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Contact</a></li>
+              </ul>
+            </nav>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        
+
+        <div>Disclaimer: FINNPICK is not a SEBI-registered advisor. 
+            The information provided on this platform are sourced from reliable outlets such as NSE and BSE,
+             is for informational purposes only and should not be considered as investment advice.
+              Investments, including IPOs, are subject to market risks.
+             Please conduct thorough research or consult a certified financial advisor before making investment decisions.</div>
+
+        <div>
+            © 2025 Finnpick. All rights reserved.
+        </div>
+        
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
-</html>
+</html>                                                                                                            
