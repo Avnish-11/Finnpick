@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Company A",
+        "date": "2025-02-01",
+        "price": "₹1000"
+    },
+    {
+        "name": "Company B",
+        "date": "2025-02-10",
+        "price": "₹1500"
+    }
+]
