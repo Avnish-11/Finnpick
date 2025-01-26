@@ -1,29 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IPO Updates - Finpick</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="assets/css/tailwind.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-</head>
-<body>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#F7F7F7] p-5">
     <header>
-        <div id="navbar"></div>
+      <div id="navbar"></div>
     </header>
 
-    <main class="p-10">
-        <h1 class="text-4xl font-bold text-center">IPO Updates</h1>
-        <div id="ipo-updates" class="space-y-4 mt-6"></div>
-    </main>
+    <div class="mt-5 flex">
+      <div>
+        <div class="bg-white rounded-[20px] flex">
+          <div class="p-4">
+            <div class="text-sm font-">Total IPOs in 2024</div>
+            <div class="text-[40px] leading-[60px] font-bold text-[#2563EB]">
+              276
+            </div>
+            <div class="text-sm text-[#6d6d6d]">
+              IPOs listed in the financial year 2024.
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-sm font-">Above GMP Listing</div>
+            <div class="text-[40px] leading-[60px] font-bold text-[#56B33D]">
+              276
+            </div>
+            <div class="text-sm text-[#6d6d6d]">
+              IPOs listed above their GMP value.
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-sm font-">Below GMP Listing</div>
+            <div class="text-[40px] leading-[60px] font-bold text-[#DF0030]">
+              276
+            </div>
+            <div class="text-sm text-[#6d6d6d]">
+              IPOs listed Below their GMP value.
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-sm font-">At Par GMP Listing</div>
+            <div class="text-[40px] leading-[60px] font-bold text-[#6D6D6D]">
+              276
+            </div>
+            <div class="text-sm text-[#6d6d6d]">
+              IPOs that matched their GMP value.
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-sm font-">Total Issue Size</div>
+            <div class="text-[40px] leading-[60px] font-bold text-[#F59E0B]">
+              ₹1,73,782.77 <span class="text-[16px]">Cr</span>
+            </div>
+            <div class="text-sm text-[#6d6d6d]">
+              The combined issue size of all IPOs in FY 2024
+            </div>
+          </div>
+        </div>
+        <div class="bg-white mt-5 flex w-fit px-10 ">
+          <div>IPO List</div>
+          <div>IPO Live subscription</div>
+          <div>IPO Live GMP</div>
+          <div>IPO Analysis</div>
+        </div>
+        <div class="bg-white mt-5">
+          An IPO List is a curated collection of companies offering Initial
+          Public Offerings. It provides details like launch dates, price bands,
+          and subscription timelines, helping investors stay updated on
+          opportunities to invest in new market entrants.
+        </div>
+      </div>
+      <div class="">
+        <img
+          src="assets/images/Upstox Promo@2x.png"
+          alt=""
+          class="w-full h-full max-h-[422px]"
+        />
+      </div>
+    </div>
 
-    <footer class="bg-blue-500 p-4 text-white text-center">
-        <p>&copy; 2025 Finpick. All Rights Reserved.</p>
-    </footer>
+    <div>
+      <div>
+        <div>
+          <div>All</div>
+          <div>Main Board</div>
+          <div>SME</div>
+          <div>Closed</div>
+          <div>UpComing</div>
+          <div>Closing Today</div>
+          <div>Listed</div>
+        </div>
+        <div>Refresh</div>
+      </div>
+      <table class="table-auto w-full text-left border-collapse">
+        <thead class="bg-[#F1FCFA]">
+          <tr>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              Company
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> Status
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> Price Range (₹)
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> IPO Size (₹) (in Cr.)
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> LOT
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> Allotment Date
+            </th>
+            <th
+              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+            >
+              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-transparent">
+            <td class="p-2">Company</td>
+            <td class="p-2">
+              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+            </td>
+            <td class="p-2">
+              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+            </td>
+            <td class="p-2">
+              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+            </td>
+            <td class="p-2">
+              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
+            </td>
+            <td class="p-2">
+              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
+            </td>
+            <td class="p-2">
+              <div class="flex items-center">
+                <span class="text-[#D1D1D1] px-4">|</span>
+                <span
+                  class="bg-[#2563EB] bg-opacity-30 border border-[#2563EB] text-[#2563EB] rounded-full text-center w-full py-1"
+                  >Status</span
+                >
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="h-[92px] w-full px-10 py-4 bg-white rounded-lg">
+      <nav class="flex justify-between items-center">
+        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
+        <ul class="flex gap-8">
+          <li>
+            <a
+              href="index.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="ipo-updates.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >IPO</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >FAQs</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <script src="assets/js/ipo.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
-</body>
+  </body>
 </html>

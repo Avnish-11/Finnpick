@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Finpick</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="assets/css/tailwind.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-</head>
-<body>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+  <body>
     <header>
-        <div id="navbar"></div>
+      <div id="navbar"></div>
     </header>
 
     <main class="p-10">
-        <h1 class="text-4xl font-bold text-center">Contact Us</h1>
-        <form class="mt-6 max-w-md mx-auto">
-            <input type="text" placeholder="Name" class="w-full p-3 mb-4 border border-gray-300 rounded">
-            <input type="email" placeholder="Email" class="w-full p-3 mb-4 border border-gray-300 rounded">
-            <textarea placeholder="Message" class="w-full p-3 mb-4 border border-gray-300 rounded" rows="4"></textarea>
-            <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded">Send Message</button>
-        </form>
+      <h1 class="text-4xl font-bold text-center">Contact Us</h1>
+      <form class="mt-6 max-w-md mx-auto">
+        <input
+          type="text"
+          placeholder="Name"
+          class="w-full p-3 mb-4 border border-gray-300 rounded"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-full p-3 mb-4 border border-gray-300 rounded"
+        />
+        <textarea
+          placeholder="Message"
+          class="w-full p-3 mb-4 border border-gray-300 rounded"
+          rows="4"
+        ></textarea>
+        <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded">
+          Send Message
+        </button>
+      </form>
     </main>
 
-    <footer class="bg-blue-500 p-4 text-white text-center">
-        <p>&copy; 2025 Finpick. All Rights Reserved.</p>
-    </footer>
+    <div class="h-[92px] w-full px-10 py-4 bg-white rounded-lg">
+      <nav class="flex justify-between items-center">
+        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
+        <ul class="flex gap-8">
+          <li>
+            <a
+              href="index.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="ipo-updates.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >IPO</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >FAQs</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
-</body>
+  </body>
 </html>
