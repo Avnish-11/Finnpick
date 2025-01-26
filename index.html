@@ -1,224 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finpick - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="assets/css/tailwind.css" rel="stylesheet" />
     <link href="assets/css/custom.css" rel="stylesheet" />
-    <link href="./output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,
     100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,
-    600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+    600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="bg-[#F7F7F7] p-5">
-
+  <body class="bg-[#F7F7F7] p-5">
     <header>
-        <div id="navbar"></div>
+      <div id="navbar"></div>
     </header>
 
-    <div class="h-[530px] w-full flex  justify-between p-8 bg-white rounded-lg mt-7">
-        <div class="max-w-[730px]">
-            <div class="text-[40px] font-bold leading-[60px] mb-4 text-[#012345]">Discover the hottest IPOs this week
-            </div>
-            <div class="mb-4">
-                Take the first step toward financial growth by opening your Demat
-                account with us. Simplify your trading and investing experience with a
-                secure, user-friendly platform tailored for modern investors.
-            </div>
-            <div class="flex gap-4">
-                <div
-                    class="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex justify-between items-center">
-                    Explore IPOs</div>
-                <div class="border-2 border-blue-500 text-blue-500 py-2 px-6 rounded-md cursor-pointer">Learn More</div>
-            </div>
+    <div
+      class="h-[530px] w-full flex justify-between p-8 bg-white rounded-lg mt-7"
+    >
+      <div class="max-w-[730px]">
+        <div class="text-[40px] font-bold leading-[60px] mb-4 text-[#012345]">
+          Discover the hottest IPOs this week
         </div>
-
-        <div class="">
-            <img src="assets/images/Illustration.png" alt="Illustration" class="w-full " />
-            <img src="assets/images/Floating Card.png" alt="Floating Card" class="absolute top-[434px] right-[480px]" />
+        <div class="mb-4">
+          Take the first step toward financial growth by opening your Demat
+          account with us. Simplify your trading and investing experience with a
+          secure, user-friendly platform tailored for modern investors.
         </div>
-    </div>
+        <div class="flex gap-4">
+          <div
+            class="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex justify-between items-center"
+          >
+            Explore IPOs
+          </div>
+          <div
+            class="border-2 border-blue-500 text-blue-500 py-2 px-6 rounded-md cursor-pointer"
+          >
+            Learn More
+          </div>
+        </div>
+      </div>
 
+      <div class="">
+        <img
+          src="assets/images/Illustration.png"
+          alt="Illustration"
+          class="w-full"
+        />
+        <img
+          src="assets/images/Floating Card.png"
+          alt="Floating Card"
+          class="absolute top-[434px] right-[480px]"
+        />
+      </div>
     </div>
-
     <div class="bg-white mt-5 p-10">
-        <div class="flex justify-between items-center">
-            <div class="">
-                <div class="text-[40px] font-bold leading-[40px] text-[#012345]">Latest IPO Updates</div>
-                <div class="text-[20px]  leading-[60px] text-gray-500">Stay informed about the latest IPOs in the
-                    market.</div>
-            </div>
-            <div class="bg-blue-500 text-white py-4 px-8 rounded-md cursor-pointer flex justify-between items-center">
-                Explore All IPOs</div>
+      <div class="flex justify-between items-center">
+        <div class="">
+          <div class="text-[40px] font-bold leading-[40px] text-[#012345]">
+            Latest IPO Updates
+          </div>
+          <div class="text-[20px] leading-[60px] text-gray-500">
+            Stay informed about the latest IPOs in the market.
+          </div>
         </div>
-
-        <div>
-            <table class="table-auto w-full text-left border-collapse">
-                <thead class="bg-[#F1FCFA]">
-                    <tr>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">Company</th>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-                        </th>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-                        </th>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-                        </th>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-                        </th>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-                        </th>
-                        <th class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Status
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border-b border-transparent">
-                        <td class="p-2">Company</td>
-                        <td class="p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-                        </td>
-                        <td class="p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-                        </td>
-                        <td class="p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-                        </td>
-                        <td class="p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-                        </td>
-                        <td class="p-2">
-                            <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-                        </td>
-                        <td class="p-2">
-                            <div class="flex items-center">
-                                <span class="text-[#D1D1D1] px-4">|</span>
-                                <span
-                                    class="bg-[#2563EB] bg-opacity-30 border border-[#2563EB] text-[#2563EB] rounded-full text-center w-full py-1">Status</span>
-                            </div>
-                        </td>
-
-                    </tr>
-
-                </tbody>
-            </table>
-
-
+        <div
+          class="bg-blue-500 text-white py-4 px-8 rounded-md cursor-pointer flex justify-between items-center"
+        >
+          Explore All IPOs
         </div>
-    </div>
+      </div>
 
-    <div class="">
-        <div class="flex flex-col justify-centre items-center ">
-            <div class="text-[38px] leading-[55px] text-[#2563EB] font-bold">Our Services</div>
-            <div class=" border-[0.5px] border-[#2563EB]  w-[240px]">
-
-            </div>
-            <div class="text-[#1A3857] text-[20px] pt-2 font-[500]">Expert IPO insights and real-time updates to guide
-                your investments.</div>
-        </div>
-        <div class="flex justify-around pt-9">
-            <div class="border-white bg-white py-5  p-10 rounded-xl ">
-                <div class="text-[19px] text-[#012345] font-[600] ">Initial Public Offering (IPO)</div>
-                <div class="pt-3 py-4">
-                    <ol class="text-[#1A1A1A] font-[500]  text-[15px] flex flex-col gap-y-1 px-5">
-                        <li>IPO List</li>
-                        <li>IPO Live Subscription</li>
-                        <li>IPO Live GMP</li>
-                        <li>IPO Analysis</li>
-                        <li>IPO Allotment</li>
-                    </ol>
+      <div>
+        <table class="table-auto w-full text-left border-collapse">
+          <thead class="bg-[#F1FCFA]">
+            <tr>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                Company
+              </th>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+              </th>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+              </th>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+              </th>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
+              </th>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
+              </th>
+              <th
+                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              >
+                <span class="text-[#D1D1D1] px-4">|</span> Status
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-transparent">
+              <td class="p-2">Company</td>
+              <td class="p-2">
+                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+              </td>
+              <td class="p-2">
+                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+              </td>
+              <td class="p-2">
+                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+              </td>
+              <td class="p-2">
+                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
+              </td>
+              <td class="p-2">
+                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
+              </td>
+              <td class="p-2">
+                <div class="flex items-center">
+                  <span class="text-[#D1D1D1] px-4">|</span>
+                  <span
+                    class="bg-[#2563EB] bg-opacity-30 border border-[#2563EB] text-[#2563EB] rounded-full text-center w-full py-1"
+                    >Status</span
+                  >
                 </div>
-            </div>
-            <div class="border-white bg-white py-5 p-14 rounded-xl">
-                <div class="text-[19px] text-[#012345] font-[600]">Open a Demat Account</div>
-                <div class="text-[#1A1A1A] font-[500]  text-[18px] pt-3">
-                    <div>Open paperless demat account.</div>
-                    <div>Subscribe ipo with a single click UPI </div>
-                    <div>based application</div>
-                </div>
-                <div class="pt-10 float-right text-[#2563EB] font-[600] text-[17px]">Get your Demat Account</div>
-            </div>
-            <div class="border-white bg-white  rounded-xl px-10 py-3">
-                <div class="text-[19px] text-[#012345] font-[600] ">FAQs</div>
-                <div class="pt-3 py-4">
-                    <ol class="text-[#1A1A1A] font-[500]  text-[18px] flex flex-col gap-y-1 ">
-                        <li>How to open demat account?</li>
-                        <li>What is the latest IPO GMP?</li>
-                        <li>How to check the allotment status?</li>
-
-                    </ol>
-                </div>
-                <div class="pt-10 float-right text-[#2563EB] font-[600] text-[17px]">know more ?</div>
-            </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="w-full flex items-center justify-center mt-10 flex-col">
+      <div>
+        <div class="text-[40px] font-bold text-[#2563EB] text-center">
+          Our Services
         </div>
+        <div
+          class="border-[0.5px] border-[#2563EB] max-w-[250px] mx-auto"
+        ></div>
+        <div class="text-[20px] font-medium text-center text-[#012345]">
+          Expert IPO insights and real-time updates to guide your investments.
+        </div>
+      </div>
+      <div
+        class="p-10 justify-center items-center w-[98%] flex gap-[20px] mx-[77.5px] mt-5 mb-10"
+      >
+        <div
+          class="w-[375px] h-[234px] rounded-[20px] gap-16px flex flex-col bg-white"
+        >
+          <div
+            class="text-[#012345] text-[20px] font-semibold mt-[20px] mx-[20px]"
+          >
+            Initial Public Offering (IPO)
+          </div>
+          <div class="mx-[20px]">
+            <ol>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-1 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                IPO List
+              </li>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                IPO Live Subscription
+              </li>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                IPO Live GMP
+              </li>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                IPO Analysis
+              </li>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                IPO Allotment
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div
+          class="w-[375px] h-[234px] rounded-[20px] bg-white gap-16px flex flex-col"
+        >
+          <div
+            class="text-[#012345] text-[20px] font-semibold mt-[20px] mx-[20px]"
+          >
+            Open a Demat Account
+          </div>
+          <div class="mx-[20px] w-[300px] mt-[4px]">
+            <div class="text-[#1A1A1A] text-[16px] font-[400]">
+              Open paperless demat account. Subscribe ipo with a single click
+              UPI based application
+            </div>
+          </div>
+
+          <div
+            class="flex mt-6 px-[20px] pt-[16px] gap-[8px] justify-end items-center"
+          >
+            <div class="font-medium text-[16px] text-[#2563EB]">
+              Get your Demat Account
+            </div>
+            <span
+              class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#2563EB]"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="w-[375px] h-[234px] rounded-[20px] gap-16px flex flex-col bg-white"
+        >
+          <div
+            class="text-[#012345] text-[20px] font-semibold mt-[20px] mx-[20px]"
+          >
+            FAQs
+          </div>
+          <div class="mx-[20px]">
+            <ol>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                How to open demat account?
+              </li>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                What is the latest IPO GMP?
+              </li>
+              <li
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#1A1A1A]"
+              >
+                How to check the allotment status?
+              </li>
+            </ol>
+            <div
+              class="flex mt-6 px-[20px] pt-[17px] gap-[8px] justify-end items-center"
+            >
+              <div class="font-medium  text-[16px] text-[#2563EB]">
+                Know More
+              </div>
+              <span
+                class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium text-[#2563EB]"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full border-[#60108A80] border-2 rounded-[20px] flex justify-between items-center pt-[20px] pb-[20px]"
+    >
+      <div>
+        <div class="mx-10 mt-[20px] text-2xl font-[600] ">
+          Create Your Demat Account Now
+        </div>
+        <div class="flex items-center gap-[8px] mx-10 mt-[12px]">
+          <img
+            src="assets/images/Vector.png"
+            alt=""
+            class="w-[16px] h-[11px]"
+          />
+          <div class="text-[20px] font-[600] text-[#60108A]">
+            Zero Account Opening Charges
+          </div>
+        </div>
+
+        <div class="flex items-center gap-[20px] justify-center bg-[#60108A] border-2 text-white w-full  h-[65px] rounded-full mx-10 mt-[12px]">
+          <div class="text-center text-medium text-[18px]">Open Your Demat Account in 5 mins</div>
+          <img src="assets/images/Icon General.png" alt="">
+        </div>
+      </div>
+      <div class="mr-[20px] m-[20px]">
+        <img
+          src="assets/images/channels4_profile 1.png"
+          alt=""
+          class="h-[150px] w-[150px]"
+        />
+      </div>
     </div>
 
-    <div>
-        <div>
-            <div>Create Your Demat Account Now</div>
-            <div>Zero Account Opening Charges</div>
-            <div>Open Your Demat Account in 5 mins</div>
+    <div class="mt-10 mb-10 flex flex-col items-center w-full">
+      <div class="text-[30px] text-[#2563EB] font-[700] text-center">
+        Stay Connected, Stay Updated
+      </div>
+      <div
+        class="h-[.5px] border-[1px] border-[#2363EB] w-[200px] mx-auto"
+      ></div>
+      <div
+        class="mt-7 text-[#1A1A1A] font-medium text-[16px] max-w-[700px] text-center"
+      >
+        At Finnpick, we provide timely stock market updates. Have questions,
+        feedback, or need assistance? We’re here to help!
+      </div>
+      <div class="flex items-center gap-3 mt-7">
+        <div class="flex gap-4 bg-white p-4 rounded-lg">
+          <img
+            src="assets/images/social icons (5).png"
+            alt=""
+            class="h-[75px] w-[75px]"
+          />
+          <div class="mt-2">
+            <div class="text-[#1A1A1A] text-[12px]">
+              Chat with Us on WhatsApp
+            </div>
+            <div class="text-[#2563EB] text-[20px] font-[700]">
+              +91 98989 89898
+            </div>
+          </div>
         </div>
-        <div><img src="assets/images/channels4_profile 1.png" alt=""></div>
+        <div class="flex gap-2 bg-white rounded-lg p-4">
+          <img
+            src="assets/images/social icons.png"
+            alt=""
+            class="h-[75px] w-[75px]"
+          />
+          <div class="mt-2">
+            <div class="text-[#1A1A1A] text-[12px]">Email Us Your Queries</div>
+            <div class="text-[#2563EB] text-[20px] font-[700]">
+              info@finnpick.com
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div>
-        <div>Stay Connected, Stay Updated</div>
-        <div>At Finnpick, we provide timely stock market updates. Have questions, feedback, or need assistance? We’re
-            here to help!</div>
-        <div>
-            <div><img src="assets/images/social icons.png" alt=""></div>
-            <div><img src="assets/images/Group 39481.png" alt=""></div>
-        </div>
-    </div>
+    <footer class="bg-white mt-5 w-full px-20 pt-24 pb-10 rounded-lg">
+      <nav class="flex justify-between items-center">
+        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
+        <ul class="flex gap-8">
+          <li>
+            <a
+              href="index.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="ipo-updates.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >IPO</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >FAQs</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex gap-6 items-center mt-5">
+        <img src="assets/images/social icons (1).png" alt="" />
+        <img src="assets/images/social icons (2).png" alt="" />
+        <img src="assets/images/social icons (3).png" alt="" />
+        <img src="assets/images/Clip path group.png" alt="" />
+        <img src="assets/images/social icons (4).png" alt="" />
+      </div>
 
-    <footer class="bg-whiteh-[92px] w-full px-10 py-4  rounded-lg ">
+      <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
+      <div class="text-[#1A1A1A] text-[12px] font-[400]">
+        FINNPICK is not a SEBI-registered advisor. The information provided on
+        this platform are sourced from reliable outlets such as NSE and BSE, is
+        for informational purposes only and should not be considered as
+        investment advice. Investments, including IPOs, are subject to market
+        risks. Please conduct thorough research or consult a certified financial
+        advisor before making investment decisions.
+      </div>
+      <div class="border-[1px] border-#D1D1D1 mt-5"></div>
 
-        <nav class="flex justify-between items-center">
-            <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
-            <ul class="flex gap-8">
-                <li><a href="index.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Home</a></li>
-                <li><a href="ipo-updates.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">IPO</a></li>
-                <li><a href="about.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">FAQs</a></li>
-                <li><a href="contact.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-
-
-        <div>Disclaimer:FINNPICK is not a SEBI-registered advisor.
-            The information provided on this platform are sourced from reliable outlets such as NSE and BSE,
-            is for informational purposes only and should not be considered as investment advice.
-            Investments, including IPOs, are subject to market risks.
-            Please conduct thorough research or consult a certified financial advisor before making investment
-            decisions.</div>
-
-        <div>
-            © 2025 Finnpick. All rights reserved.
-        </div>
-
+      <div class="text-[#1A1A1A] text-center mt-8 text-[12px] font-[400]">
+        © 2025 Finnpick. All rights reserved.
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
-</body>
-
+  </body>
 </html>
