@@ -1,28 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Finpick</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="assets/css/tailwind.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-</head>
-<body>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#F7F7F7] p-5">
     <header>
-        <div id="navbar"></div>
+      <div id="navbar"></div>
     </header>
 
-    <main class="text-center p-10">
-        <h1 class="text-4xl font-bold">About Finpick</h1>
-        <p>Finpick is dedicated to providing accurate and timely updates on Initial Public Offerings (IPOs) to help investors make informed decisions.</p>
-    </main>
+    <div class="bg-white rounded-[20px] p-5 mt-10">
+      <div
+        class="flex justify-center items-center mt-10 text-[#2563EB] font-bold text-[40px] leading-16"
+      >
+        Frequently Asked Questions (FAQs)
+      </div>
 
-    <footer class="bg-blue-500 p-4 text-white text-center">
-        <p>&copy; 2025 Finpick. All Rights Reserved.</p>
+      <div
+      class="border-[0.5px] border-[#2563EB] max-w-[250px] mx-auto"
+    ></div>
+
+      <div class="flex gap-2.5 w-fit mt-10">
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          IPO
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          GMP
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          Demant Account
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          Charges
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          Fund Statement
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          Account Opening
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
+        >
+          Others
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="max-w-4xl mx-auto mt-10">
+        
+
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <!-- Question 1 -->
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq1')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq1">+</span>
+            </button>
+            <div id="faq1" class="hidden text-gray-600 text-base pb-4">
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq2')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >Do you offer international shipping?</span
+              >
+              <span class="text-gray-500" id="icon-faq2">+</span>
+            </button>
+            <div id="faq2" class="hidden text-gray-600 text-base pb-4">
+              Yes, we ship to most countries worldwide. Shipping costs will be
+              calculated at checkout based on your location.
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq3')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >How can I contact customer support?</span
+              >
+              <span class="text-gray-500" id="icon-faq3">+</span>
+            </button>
+            <div id="faq3" class="hidden text-gray-600 text-base pb-4">
+              You can reach our support team via email at support@example.com or
+              by calling our hotline at 1-800-555-1234.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq4')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >Can I cancel my order?</span
+              >
+              <span class="text-gray-500" id="icon-faq4">+</span>
+            </button>
+            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+              Orders can be canceled within 24 hours of placement. After this
+              period, cancellations may not be possible as the order may have
+              already been processed.
+            </div>
+          </div>
+
+
+
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq4')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >How do I apply for IPOs through FinnPick?</span
+              >
+              <span class="text-gray-500" id="icon-faq4">+</span>
+            </button>
+            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+              Orders can be canceled within 24 hours of placement. After this
+              period, cancellations may not be possible as the order may have
+              already been processed.
+            </div>
+          </div>
+
+
+
+
+
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq4')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >Why should I open a Demat account with FinnPick?</span
+              >
+              <span class="text-gray-500" id="icon-faq4">+</span>
+            </button>
+            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+              Orders can be canceled within 24 hours of placement. After this
+              period, cancellations may not be possible as the order may have
+              already been processed.
+            </div>
+          </div>
+
+
+
+
+
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq4')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >What are the benefits of opening a Demat account with FinnPick?</span
+              >
+              <span class="text-gray-500" id="icon-faq4">+</span>
+            </button>
+            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+              Orders can be canceled within 24 hours of placement. After this
+              period, cancellations may not be possible as the order may have
+              already been processed.
+            </div>
+          </div>
+
+
+
+
+
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq4')"
+            >
+              <span class="text-lg font-medium text-gray-700"
+                >Can I track my IPO applications and results?</span
+              >
+              <span class="text-gray-500" id="icon-faq4">+</span>
+            </button>
+            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+              Orders can be canceled within 24 hours of placement. After this
+              period, cancellations may not be possible as the order may have
+              already been processed.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="bg-[#012345] flex justify-between items-center p-5 mt-10">
+        <div class="text-white">
+          <div>Still have questions?</div>
+          <div>
+            can’t find the answer you’re looking for? Please with our friendly
+            team.
+          </div>
+        </div>
+        <div class="px-10 py-4 bg-[#2563EB] text-white rounded-lg">
+          Contact Us
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function toggleFaq(faqId) {
+        const faqElement = document.getElementById(faqId);
+        const iconElement = document.getElementById(`icon-${faqId}`);
+
+        if (faqElement.classList.contains("hidden")) {
+          faqElement.classList.remove("hidden");
+          iconElement.textContent = "-";
+        } else {
+          faqElement.classList.add("hidden");
+          iconElement.textContent = "+";
+        }
+      }
+    </script>
+
+    <footer class="bg-white mt-5 w-full px-20 pt-24 pb-10 rounded-lg">
+      <nav class="flex justify-between items-center">
+        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
+        <ul class="flex gap-8">
+          <li>
+            <a
+              href="index.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="ipo-updates.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >IPO</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >FAQs</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex gap-6 items-center mt-5">
+        <img src="assets/images/social icons (1).png" alt="" />
+        <img src="assets/images/social icons (2).png" alt="" />
+        <img src="assets/images/social icons (3).png" alt="" />
+        <img src="assets/images/Clip path group.png" alt="" />
+        <img src="assets/images/social icons (4).png" alt="" />
+      </div>
+
+      <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
+      <div class="text-[#1A1A1A] text-[12px] font-[400]">
+        FINNPICK is not a SEBI-registered advisor. The information provided on
+        this platform are sourced from reliable outlets such as NSE and BSE, is
+        for informational purposes only and should not be considered as
+        investment advice. Investments, including IPOs, are subject to market
+        risks. Please conduct thorough research or consult a certified financial
+        advisor before making investment decisions.
+      </div>
+      <div class="border-[1px] border-#D1D1D1 mt-5"></div>
+
+      <div class="text-[#1A1A1A] text-center mt-8 text-[12px] font-[400]">
+        © 2025 Finnpick. All rights reserved.
+      </div>
     </footer>
-    
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
-</body>
+  </body>
 </html>

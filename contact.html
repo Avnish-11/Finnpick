@@ -13,65 +13,121 @@
       <div id="navbar"></div>
     </header>
 
-    <main class="p-10">
-      <h1 class="text-4xl font-bold text-center">Contact Us</h1>
-      <form class="mt-6 max-w-md mx-auto">
-        <input
-          type="text"
-          placeholder="Name"
-          class="w-full p-3 mb-4 border border-gray-300 rounded"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          class="w-full p-3 mb-4 border border-gray-300 rounded"
-        />
-        <textarea
-          placeholder="Message"
-          class="w-full p-3 mb-4 border border-gray-300 rounded"
-          rows="4"
-        ></textarea>
-        <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded">
-          Send Message
-        </button>
-      </form>
+    <!-- Main Content -->
+    <main class="bg-gray-100 py-16">
+      <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">
+          Contact Us
+        </h1>
+        <p class="text-gray-600 text-center mb-6">
+          We’d love to hear from you! Whether you have a question about our services or just want to share feedback, feel free to reach out.
+        </p>
+
+        <!-- Contact Form -->
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-gray-700 font-medium">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-gray-700 font-medium">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-gray-700 font-medium">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-[#2563EB] text-white px-4 py-2 rounded-lg hover:bg-[#1E4FA5] transition duration-200 font-medium"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
     </main>
 
-    <div class="h-[92px] w-full px-10 py-4 bg-white rounded-lg">
+    <footer class="bg-white mt-10 w-full px-20 pt-24 pb-10 rounded-lg">
       <nav class="flex justify-between items-center">
         <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
         <ul class="flex gap-8">
           <li>
             <a
               href="index.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
               >Home</a
             >
           </li>
           <li>
             <a
               href="ipo-updates.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
               >IPO</a
             >
           </li>
           <li>
             <a
               href="about.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
               >FAQs</a
             >
           </li>
           <li>
             <a
               href="contact.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
-    </div>
+      <div class="flex gap-6 items-center mt-5">
+        <img src="assets/images/social icons (1).png" alt="" />
+        <img src="assets/images/social icons (2).png" alt="" />
+        <img src="assets/images/social icons (3).png" alt="" />
+        <img src="assets/images/Clip path group.png" alt="" />
+        <img src="assets/images/social icons (4).png" alt="" />
+      </div>
+
+      <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
+      <div class="text-[#1A1A1A] text-[12px] font-[400]">
+        FINNPICK is not a SEBI-registered advisor. The information provided on
+        this platform are sourced from reliable outlets such as NSE and BSE, is
+        for informational purposes only and should not be considered as
+        investment advice. Investments, including IPOs, are subject to market
+        risks. Please conduct thorough research or consult a certified financial
+        advisor before making investment decisions.
+      </div>
+      <div class="border-[1px] border-#D1D1D1 mt-5"></div>
+
+      <div class="text-[#1A1A1A] text-center mt-8 text-[12px] font-[400]">
+        © 2025 Finnpick. All rights reserved.
+      </div>
+    </footer>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
