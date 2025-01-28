@@ -20,9 +20,7 @@
         Frequently Asked Questions (FAQs)
       </div>
 
-      <div
-      class="border-[0.5px] border-[#2563EB] max-w-[250px] mx-auto"
-    ></div>
+      <div class="border-[0.5px] border-[#2563EB] max-w-[250px] mx-auto"></div>
 
       <div class="flex gap-2.5 w-fit mt-10">
         <div
@@ -63,10 +61,40 @@
       </div>
 
       <!-- FAQ Section -->
-      <div class="max-w-4xl mx-auto mt-10">
-        
+      <div class="mt-10 mx-10">
+        <div class="flex justify-between items-center mb-5">
+          <!-- Search Bar -->
+          <div
+            class="flex items-center border border-gray-300 rounded-md px-3 py-2 w-full max-w-md"
+          >
+            <input
+              type="text"
+              placeholder="Search..."
+              class="flex-grow focus:outline-none text-sm text-gray-700"
+              id="searchInput"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 19a8 8 0 100-16 8 8 0 000 16zm7-7l4 4"
+              />
+            </svg>
+            <button
+              class="text-gray-500 hover:text-gray-800 ml-2"
+              onclick="handleSearch()"
+            ></button>
+          </div>
+        </div>
 
-        <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="bg-[#F7F7F7] rounded-lg shadow-lg p-6">
           <!-- Question 1 -->
           <div class="border-b border-gray-200">
             <button
@@ -136,82 +164,69 @@
             </div>
           </div>
 
-
-
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
-              onclick="toggleFaq('faq4')"
+              onclick="toggleFaq('faq5')"
             >
               <span class="text-lg font-medium text-gray-700"
                 >How do I apply for IPOs through FinnPick?</span
               >
-              <span class="text-gray-500" id="icon-faq4">+</span>
+              <span class="text-gray-500" id="icon-faq5">+</span>
             </button>
-            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+            <div id="faq5" class="hidden text-gray-600 text-base pb-4">
               Orders can be canceled within 24 hours of placement. After this
               period, cancellations may not be possible as the order may have
               already been processed.
             </div>
           </div>
 
-
-
-
-
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
-              onclick="toggleFaq('faq4')"
+              onclick="toggleFaq('faq6')"
             >
               <span class="text-lg font-medium text-gray-700"
                 >Why should I open a Demat account with FinnPick?</span
               >
-              <span class="text-gray-500" id="icon-faq4">+</span>
+              <span class="text-gray-500" id="icon-faq6">+</span>
             </button>
-            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+            <div id="faq6" class="hidden text-gray-600 text-base pb-4">
               Orders can be canceled within 24 hours of placement. After this
               period, cancellations may not be possible as the order may have
               already been processed.
             </div>
           </div>
 
-
-
-
-
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
-              onclick="toggleFaq('faq4')"
+              onclick="toggleFaq('faq7')"
             >
               <span class="text-lg font-medium text-gray-700"
-                >What are the benefits of opening a Demat account with FinnPick?</span
+                >What are the benefits of opening a Demat account with
+                FinnPick?</span
               >
-              <span class="text-gray-500" id="icon-faq4">+</span>
+              <span class="text-gray-500" id="icon-faq7">+</span>
             </button>
-            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+            <div id="faq7" class="hidden text-gray-600 text-base pb-4">
               Orders can be canceled within 24 hours of placement. After this
               period, cancellations may not be possible as the order may have
               already been processed.
             </div>
           </div>
 
-
-
-
-
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
-              onclick="toggleFaq('faq4')"
+              onclick="toggleFaq('faq8')"
             >
               <span class="text-lg font-medium text-gray-700"
                 >Can I track my IPO applications and results?</span
               >
-              <span class="text-gray-500" id="icon-faq4">+</span>
+              <span class="text-gray-500" id="icon-faq8">+</span>
             </button>
-            <div id="faq4" class="hidden text-gray-600 text-base pb-4">
+            <div id="faq8" class="hidden text-gray-600 text-base pb-4">
               Orders can be canceled within 24 hours of placement. After this
               period, cancellations may not be possible as the order may have
               already been processed.
@@ -220,11 +235,9 @@
         </div>
       </div>
 
-
-
-
-
-      <div class="bg-[#012345] flex justify-between items-center p-5 mt-10">
+      <div
+        class="bg-[#012345] flex justify-between items-center p-5 rounded-lg mt-10"
+      >
         <div class="text-white">
           <div>Still have questions?</div>
           <div>
@@ -254,46 +267,169 @@
       }
     </script>
 
+    <a href="https://upstox.com/open-demat-account/?f=KT7366"
+      ><button
+        class="w-full border-[#60108A80] border-2 rounded-[20px] flex justify-between items-center mt-5  pt-[20px] pb-[20px] px-5"
+      >
+        <div>
+          <div class="mx-10 mt-[20px] text-2xl font-[600]">
+            Create Your Demat Account Now
+          </div>
+          <div class="flex items-center gap-[8px] mx-10 mt-[12px]">
+            <img
+              src="assets/images/Vector.png"
+              alt=""
+              class="w-[16px] h-[11px]"
+            />
+            <div class="text-[20px] font-[600] text-[#60108A]">
+              Zero Account Opening Charges
+            </div>
+          </div>
+
+          <div
+            class="flex items-center gap-[20px] justify-center bg-[#60108A] border-2 text-white w-full h-[65px] rounded-full mx-10 mt-[12px]"
+          >
+            <div class="text-center text-medium text-[18px]">
+              Open Your Demat Account in 5 mins
+            </div>
+            <img src="assets/images/Icon General.png" alt="" />
+          </div>
+        </div>
+        <div class="mr-[20px] m-[20px]">
+          <img
+            src="assets/images/channels4_profile 1.png"
+            alt=""
+            class="h-[150px] w-[150px]"
+          />
+        </div></button
+    ></a>
+
+    <div class="mt-10 mb-10 flex flex-col items-center w-full">
+      <div class="text-[30px] text-[#2563EB] font-[700] text-center">
+        Stay Connected, Stay Updated
+      </div>
+      <div
+        class="h-[.5px] border-[1px] border-[#2363EB] w-[200px] mx-auto"
+      ></div>
+      <div
+        class="mt-7 text-[#1A1A1A] font-medium text-[16px] max-w-[700px] text-center"
+      >
+        At Finnpick, we provide timely stock market updates. Have questions,
+        feedback, or need assistance? We’re here to help!
+      </div>
+      <div class="flex items-center gap-3 mt-7 cursor-pointer">
+        <a
+          href="https://wa.me/919898989898"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div
+            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+          >
+            <img
+              src="assets/images/social icons (5).png"
+              alt=""
+              class="h-[75px] w-[75px]"
+            />
+
+            <div class="mt-2">
+              <div class="text-[#1A1A1A] text-[12px]">
+                Chat with Us on WhatsApp
+              </div>
+              <div class="text-[#2563EB] text-[20px] font-[700]">
+                +91 98989 89898
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="mailto:info@finnpick.com">
+          <div
+            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+          >
+            <img
+              src="assets/images/social icons.png"
+              alt=""
+              class="h-[75px] w-[75px]"
+            />
+            <div class="mt-2">
+              <div class="text-[#1A1A1A] text-[12px]">
+                Email Us Your Queries
+              </div>
+              <div class="text-[#2563EB] text-[20px] font-[700]">
+                info@finnpick.com
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
     <footer class="bg-white mt-5 w-full px-20 pt-24 pb-10 rounded-lg">
-      <nav class="flex justify-between items-center">
+      <nav class="flex justify-between items-center t">
         <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
         <ul class="flex gap-8">
           <li>
             <a
               href="index.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
               >Home</a
             >
           </li>
           <li>
             <a
               href="ipo-updates.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
               >IPO</a
             >
           </li>
           <li>
             <a
               href="about.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
               >FAQs</a
             >
           </li>
           <li>
             <a
               href="contact.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[12px]"
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
       <div class="flex gap-6 items-center mt-5">
-        <img src="assets/images/social icons (1).png" alt="" />
-        <img src="assets/images/social icons (2).png" alt="" />
-        <img src="assets/images/social icons (3).png" alt="" />
-        <img src="assets/images/Clip path group.png" alt="" />
-        <img src="assets/images/social icons (4).png" alt="" />
+        <a href=""
+          ><img
+            src="assets/images/social icons (1).png"
+            alt=""
+            class="cursor-pointer"
+        /></a>
+        <a href=""
+          ><img
+            src="assets/images/social icons (2).png"
+            alt=""
+            class="cursor-pointer"
+        /></a>
+        <a href="https://wa.me/918925782230"
+          ><img
+            src="assets/images/social icons (3).png"
+            alt=""
+            class="cursor-pointer"
+        /></a>
+        <a href=""
+          ><img
+            src="assets/images/Clip path group.png"
+            alt=""
+            class="cursor-pointer"
+        /></a>
+        <a href=""
+          ><img
+            src="assets/images/social icons (4).png"
+            alt=""
+            class="cursor-pointer"
+        /></a>
       </div>
 
       <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
