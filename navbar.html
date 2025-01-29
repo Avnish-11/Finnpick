@@ -1,11 +1,43 @@
-<div class="h-[92px] w-full px-10 py-4 bg-white rounded-lg">
+<div class="h-[92px] w-full px-6 md:px-10 py-4 bg-white rounded-lg">
   <nav class="flex justify-between items-center">
+    <!-- Logo -->
     <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
-    <ul class="flex gap-8">
+
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex gap-8">
       <li><a href="index.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Home</a></li>
       <li><a href="ipo-updates.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">IPO</a></li>
       <li><a href="about.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">FAQs</a></li>
       <li><a href="contact.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Contact</a></li>
     </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
   </nav>
+
+  <!-- Mobile Navigation (Hidden by Default) -->
+  <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white rounded-lg shadow-md">
+    <ul class="flex flex-col items-center gap-4 py-4">
+      <li><a href="index.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Home</a></li>
+      <li><a href="ipo-updates.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">IPO</a></li>
+      <li><a href="about.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">FAQs</a></li>
+      <li><a href="contact.html" class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200">Contact</a></li>
+    </ul>
+  </div>
 </div>
+
+<!-- Mobile Menu Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>

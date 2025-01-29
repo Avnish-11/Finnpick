@@ -13,7 +13,7 @@
       <div id="navbar"></div>
     </header>
 
-    <div class="bg-white rounded-[20px] p-5 mt-10">
+    <!-- <div class="bg-white rounded-[20px] p-5 mt-10">
       <div
         class="flex justify-center items-center mt-10 text-[#2563EB] font-bold text-[40px] leading-16"
       >
@@ -60,10 +60,8 @@
         </div>
       </div>
 
-      <!-- FAQ Section -->
       <div class="mt-10 mx-10">
         <div class="flex justify-between items-center mb-5">
-          <!-- Search Bar -->
           <div
             class="flex items-center border border-gray-300 rounded-md px-3 py-2 w-full max-w-md"
           >
@@ -95,7 +93,6 @@
         </div>
 
         <div class="bg-[#F7F7F7] rounded-lg shadow-lg p-6">
-          <!-- Question 1 -->
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
@@ -112,7 +109,6 @@
             </div>
           </div>
 
-          <!-- Question 2 -->
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
@@ -129,7 +125,6 @@
             </div>
           </div>
 
-          <!-- Question 3 -->
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
@@ -146,7 +141,6 @@
             </div>
           </div>
 
-          <!-- Question 4 -->
           <div class="border-b border-gray-200">
             <button
               class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
@@ -249,6 +243,252 @@
           Contact Us
         </div>
       </div>
+    </div> -->
+
+    <div class="bg-white rounded-[20px] p-5 mt-10">
+      <div
+        class="flex justify-center items-center mt-10 text-[#2563EB] font-bold text-[30px] md:text-[40px] lg:text-[50px] leading-10 md:leading-16"
+      >
+        Frequently Asked Questions (FAQs)
+      </div>
+
+      <div
+        class="border-[0.5px] border-[#2563EB] max-w-[250px] mx-auto mt-4 md:mt-10"
+      ></div>
+
+      <div class="flex flex-wrap gap-2.5 w-full justify-center mt-10">
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          IPO
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          GMP
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          Demant Account
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          Charges
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          Fund Statement
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          Account Opening
+        </div>
+        <div
+          class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[14px] md:text-[16px] leading-5 md:leading-6 font-medium"
+        >
+          Others
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mt-10 mx-4 md:mx-10">
+        <div class="flex justify-between items-center mb-5">
+          <!-- Search Bar -->
+          <div
+            class="flex items-center border border-gray-300 rounded-md px-3 py-2 w-full max-w-md"
+          >
+            <input
+              type="text"
+              placeholder="Search..."
+              class="flex-grow focus:outline-none text-sm text-gray-700"
+              id="searchInput"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 19a8 8 0 100-16 8 8 0 000 16zm7-7l4 4"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F7F7] rounded-lg shadow-lg p-6">
+          <!-- FAQ items, same structure as before, adjusting text sizes for smaller screens -->
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq1')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq1">+</span>
+            </button>
+            <div
+              id="faq1"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq2')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq2">+</span>
+            </button>
+            <div
+              id="faq2"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq3')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq3">+</span>
+            </button>
+            <div
+              id="faq3"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq4')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq4">+</span>
+            </button>
+            <div
+              id="faq4"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq5')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq5">+</span>
+            </button>
+            <div
+              id="faq5"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq6')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq6">+</span>
+            </button>
+            <div
+              id="faq6"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq7')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq7">+</span>
+            </button>
+            <div
+              id="faq7"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+          <div class="border-b border-gray-200">
+            <button
+              class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              onclick="toggleFaq('faq8')"
+            >
+              <span class="text-base md:text-lg font-medium text-gray-700"
+                >What is your return policy?</span
+              >
+              <span class="text-gray-500" id="icon-faq8">+</span>
+            </button>
+            <div
+              id="faq8"
+              class="hidden text-gray-600 text-sm md:text-base pb-4"
+            >
+              We offer a 30-day return policy for all items in their original
+              condition. Please visit our Returns page for more information.
+            </div>
+          </div>
+
+          <!-- Repeat the FAQ structure for the rest of the questions -->
+        </div>
+      </div>
+
+      <div
+        class="bg-[#012345] flex flex-col md:flex-row justify-between items-center p-5 rounded-lg mt-10"
+      >
+        <div class="text-white text-center md:text-left mb-4 md:mb-0">
+          <div>Still have questions?</div>
+          <div>
+            Can’t find the answer you’re looking for? Please reach out to our
+            friendly team.
+          </div>
+        </div>
+        <div class="px-10 py-4 bg-[#2563EB] text-white rounded-lg">
+          Contact Us
+        </div>
+      </div>
     </div>
 
     <!-- JavaScript -->
@@ -267,96 +507,124 @@
       }
     </script>
 
-    <a href="https://upstox.com/open-demat-account/?f=KT7366"
-      ><button
-        class="w-full border-[#60108A80] border-2 rounded-[20px] flex justify-between items-center mt-5  pt-[20px] pb-[20px] px-5"
+    <a href="https://upstox.com/open-demat-account/?f=KT7366">
+      <button
+        class="w-full border-[#60108A80] border-2 rounded-[20px] flex flex-col sm:flex-row justify-between items-center p-5 sm:p-[20px]"
       >
-        <div>
-          <div class="mx-10 mt-[20px] text-2xl font-[600]">
+        <!-- Left Section -->
+        <div class="w-full sm:w-auto text-center sm:text-left">
+          <div
+            class="mx-5 sm:mx-10 mt-2 sm:mt-[20px] text-xl sm:text-2xl font-semibold"
+          >
             Create Your Demat Account Now
           </div>
-          <div class="flex items-center gap-[8px] mx-10 mt-[12px]">
+
+          <div
+            class="flex flex-col sm:flex-row items-center gap-[8px] mx-5 sm:mx-10 mt-[12px]"
+          >
             <img
               src="assets/images/Vector.png"
-              alt=""
+              alt="Check Icon"
               class="w-[16px] h-[11px]"
             />
-            <div class="text-[20px] font-[600] text-[#60108A]">
+            <div
+              class="text-[16px] sm:text-[20px] font-semibold text-[#60108A]"
+            >
               Zero Account Opening Charges
             </div>
           </div>
 
           <div
-            class="flex items-center gap-[20px] justify-center bg-[#60108A] border-2 text-white w-full h-[65px] rounded-full mx-10 mt-[12px]"
+            class="flex items-center gap-[12px] justify-center sm:justify-start bg-[#60108A] border-2 text-white w-full sm:w-auto px-6 h-[50px] sm:h-[65px] rounded-full mx-5 sm:mx-10 mt-[12px]"
           >
-            <div class="text-center text-medium text-[18px]">
+            <div class="text-center text-medium text-[16px] sm:text-[18px]">
               Open Your Demat Account in 5 mins
             </div>
-            <img src="assets/images/Icon General.png" alt="" />
+            <img
+              src="assets/images/Icon General.png"
+              alt="Arrow Icon"
+              class="w-[20px] sm:w-auto"
+            />
           </div>
         </div>
-        <div class="mr-[20px] m-[20px]">
+
+        <!-- Right Section (Image) -->
+        <div class="mt-5 sm:mt-0 sm:mr-[20px]">
           <img
             src="assets/images/channels4_profile 1.png"
-            alt=""
-            class="h-[150px] w-[150px]"
+            alt="Profile Image"
+            class="w-[100px] sm:w-[150px] h-[100px] sm:h-[150px]"
           />
-        </div></button
-    ></a>
+        </div>
+      </button>
+    </a>
 
-    <div class="mt-10 mb-10 flex flex-col items-center w-full">
-      <div class="text-[30px] text-[#2563EB] font-[700] text-center">
+    <div class="mt-10 mb-10 flex flex-col items-center w-full px-4">
+      <!-- Title -->
+      <div
+        class="text-[24px] sm:text-[30px] text-[#2563EB] font-bold text-center"
+      >
         Stay Connected, Stay Updated
       </div>
+
+      <!-- Divider -->
       <div
-        class="h-[.5px] border-[1px] border-[#2363EB] w-[200px] mx-auto"
+        class="h-[1px] border border-[#2363EB] w-[150px] sm:w-[200px] my-2"
       ></div>
+
+      <!-- Description -->
       <div
-        class="mt-7 text-[#1A1A1A] font-medium text-[16px] max-w-[700px] text-center"
+        class="mt-4 text-[#1A1A1A] font-medium text-[14px] sm:text-[16px] max-w-[90%] sm:max-w-[700px] text-center"
       >
         At Finnpick, we provide timely stock market updates. Have questions,
         feedback, or need assistance? We’re here to help!
       </div>
-      <div class="flex items-center gap-3 mt-7 cursor-pointer">
+
+      <!-- Contact Options -->
+      <div
+        class="flex flex-col sm:flex-row items-center gap-5 mt-6 cursor-pointer w-full justify-center"
+      >
+        <!-- WhatsApp -->
         <a
           href="https://wa.me/919898989898"
           target="_blank"
           rel="noopener noreferrer"
+          class="w-full sm:w-auto"
         >
           <div
-            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+            class="flex items-center gap-4 border-2 border-white bg-white p-4 rounded-lg hover:border-[#2363EB] shadow-md"
           >
             <img
               src="assets/images/social icons (5).png"
-              alt=""
-              class="h-[75px] w-[75px]"
+              alt="WhatsApp"
+              class="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]"
             />
-
-            <div class="mt-2">
-              <div class="text-[#1A1A1A] text-[12px]">
+            <div class="mt-1">
+              <div class="text-[#1A1A1A] text-[12px] sm:text-[14px]">
                 Chat with Us on WhatsApp
               </div>
-              <div class="text-[#2563EB] text-[20px] font-[700]">
+              <div class="text-[#2563EB] text-[16px] sm:text-[20px] font-bold">
                 +91 98989 89898
               </div>
             </div>
           </div>
         </a>
 
-        <a href="mailto:info@finnpick.com">
+        <!-- Email -->
+        <a href="mailto:info@finnpick.com" class="w-full sm:w-auto">
           <div
-            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+            class="flex items-center gap-4 border-2 border-white bg-white p-4 rounded-lg hover:border-[#2363EB] shadow-md"
           >
             <img
               src="assets/images/social icons.png"
-              alt=""
-              class="h-[75px] w-[75px]"
+              alt="Email"
+              class="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]"
             />
-            <div class="mt-2">
-              <div class="text-[#1A1A1A] text-[12px]">
+            <div class="mt-1">
+              <div class="text-[#1A1A1A] text-[12px] sm:text-[14px]">
                 Email Us Your Queries
               </div>
-              <div class="text-[#2563EB] text-[20px] font-[700]">
+              <div class="text-[#2563EB] text-[16px] sm:text-[20px] font-bold">
                 info@finnpick.com
               </div>
             </div>
@@ -365,48 +633,64 @@
       </div>
     </div>
 
-    <footer class="bg-white mt-5 w-full px-20 pt-24 pb-10 rounded-lg">
-      <nav class="flex justify-between items-center t">
-        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
-        <ul class="flex gap-8">
+    <footer
+      class="bg-white mt-5 w-full px-6 sm:px-10 md:px-20 pt-16 pb-8 rounded-lg"
+    >
+      <!-- Navigation -->
+      <nav class="flex flex-col sm:flex-row justify-between items-center">
+        <img
+          src="assets/images/Logo.png"
+          alt="Finpick Logo"
+          class="h-10 sm:h-12 mb-4 sm:mb-0"
+        />
+
+        <ul class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-center">
           <li>
             <a
               href="index.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >Home</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="ipo-updates.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >IPO</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              IPO
+            </a>
           </li>
           <li>
             <a
               href="about.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >FAQs</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              FAQs
+            </a>
           </li>
           <li>
             <a
               href="contact.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >Contact</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
-      <div class="flex gap-6 items-center mt-5">
-        <a href=""
+
+      <!-- Social Icons -->
+      <div
+        class="flex justify-center sm:justify-start gap-4 sm:gap-6 items-center mt-6"
+      >
+        <a href="#"
           ><img
             src="assets/images/social icons (1).png"
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/social icons (2).png"
             alt=""
@@ -418,13 +702,13 @@
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/Clip path group.png"
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/social icons (4).png"
             alt=""
@@ -432,18 +716,28 @@
         /></a>
       </div>
 
-      <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
-      <div class="text-[#1A1A1A] text-[12px] font-[400]">
+      <!-- Disclaimer -->
+      <div
+        class="text-[#1A1A1A] text-[12px] font-medium mt-6 text-center sm:text-left"
+      >
+        <strong>Disclaimer:</strong>
+      </div>
+      <div
+        class="text-[#1A1A1A] text-[12px] font-light text-center sm:text-left mt-2 max-w-[90%] sm:max-w-[700px] mx-auto sm:mx-0"
+      >
         FINNPICK is not a SEBI-registered advisor. The information provided on
-        this platform are sourced from reliable outlets such as NSE and BSE, is
-        for informational purposes only and should not be considered as
+        this platform is sourced from reliable outlets such as NSE and BSE, and
+        is for informational purposes only. It should not be considered
         investment advice. Investments, including IPOs, are subject to market
         risks. Please conduct thorough research or consult a certified financial
         advisor before making investment decisions.
       </div>
-      <div class="border-[1px] border-#D1D1D1 mt-5"></div>
 
-      <div class="text-[#1A1A1A] text-center mt-8 text-[12px] font-[400]">
+      <!-- Divider -->
+      <div class="border-t border-gray-300 mt-6"></div>
+
+      <!-- Copyright -->
+      <div class="text-[#1A1A1A] text-center mt-6 text-[12px] font-light">
         © 2025 Finnpick. All rights reserved.
       </div>
     </footer>

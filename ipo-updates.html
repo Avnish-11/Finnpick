@@ -13,48 +13,65 @@
       <div id="navbar"></div>
     </header>
 
-    <div class="mt-5 flex">
-      <div>
-        <div class="bg-white rounded-[20px] flex">
-          <div class="p-4">
-            <div class="text-sm font-">Total IPOs in 2024</div>
-            <div class="text-[40px] leading-[60px] font-bold text-[#2563EB]">
+    <div class="mt-5 flex flex-col sm:flex-row gap-5">
+      <!-- Left Section with Cards -->
+      <div class="flex-1">
+        <div
+          class="bg-white rounded-[20px] p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
+        >
+          <div class="p-4 border border-gray-200 rounded-lg text-center">
+            <div class="text-sm font-medium">Total IPOs in 2024</div>
+            <div
+              class="text-[32px] sm:text-[40px] leading-[40px] sm:leading-[60px] font-bold text-[#2563EB]"
+            >
               276
             </div>
             <div class="text-sm text-[#6d6d6d]">
               IPOs listed in the financial year 2024.
             </div>
           </div>
-          <div class="p-4">
-            <div class="text-sm font-">Above GMP Listing</div>
-            <div class="text-[40px] leading-[60px] font-bold text-[#56B33D]">
+
+          <div class="p-4 border border-gray-200 rounded-lg text-center">
+            <div class="text-sm font-medium">Above GMP Listing</div>
+            <div
+              class="text-[32px] sm:text-[40px] leading-[40px] sm:leading-[60px] font-bold text-[#56B33D]"
+            >
               2
             </div>
             <div class="text-sm text-[#6d6d6d]">
               IPOs listed above their GMP value.
             </div>
           </div>
-          <div class="p-4">
-            <div class="text-sm font-">Below GMP Listing</div>
-            <div class="text-[40px] leading-[60px] font-bold text-[#DF0030]">
+
+          <div class="p-4 border border-gray-200 rounded-lg text-center">
+            <div class="text-sm font-medium">Below GMP Listing</div>
+            <div
+              class="text-[32px] sm:text-[40px] leading-[40px] sm:leading-[60px] font-bold text-[#DF0030]"
+            >
               89
             </div>
             <div class="text-sm text-[#6d6d6d]">
-              IPOs listed Below their GMP value.
+              IPOs listed below their GMP value.
             </div>
           </div>
-          <div class="p-4">
-            <div class="text-sm font-">At Par GMP Listing</div>
-            <div class="text-[40px] leading-[60px] font-bold text-[#6D6D6D]">
+
+          <div class="p-4 border border-gray-200 rounded-lg text-center">
+            <div class="text-sm font-medium">At Par GMP Listing</div>
+            <div
+              class="text-[32px] sm:text-[40px] leading-[40px] sm:leading-[60px] font-bold text-[#6D6D6D]"
+            >
               27
             </div>
             <div class="text-sm text-[#6d6d6d]">
               IPOs that matched their GMP value.
             </div>
           </div>
-          <div class="p-4">
-            <div class="text-sm font-">Total Issue Size</div>
-            <div class="text-[40px] leading-[60px] font-bold text-[#F59E0B]">
+
+          <div class="p-4 border border-gray-200 rounded-lg text-center">
+            <div class="text-sm font-medium">Total Issue Size</div>
+            <div
+              class="text-[32px] sm:text-[28px] leading-[40px] sm:leading-[60px] font-bold text-[#F59E0B]"
+            >
               ₹1,73,782.77 <span class="text-[16px]">Cr</span>
             </div>
             <div class="text-sm text-[#6d6d6d]">
@@ -63,10 +80,13 @@
           </div>
         </div>
 
-        <div class="bg-white mt-5 flex gap-2.5 w-fit px-10 py-5 rounded-[20px]">
+        <!-- Buttons Section -->
+        <div
+          class="bg-white mt-5 flex gap-2.5 w-fit px-10 py-5 rounded-[20px] flex-wrap sm:flex-nowrap"
+        >
           <div
-            class="px-10 py-4 text-[#2563EB] bg-white  hover:bg-[#2563EB] hover:text-white text-lg font-medium rounded-lg border-2 border-[#2563EB] cursor-pointer"
-            onclick="toggleElement('ipoListButton','table' )"
+            class="px-10 py-4 text-[#2563EB] bg-white hover:bg-[#2563EB] hover:text-white text-lg font-medium rounded-lg border-2 border-[#2563EB] cursor-pointer"
+            onclick="toggleElement('ipoListButton','table')"
           >
             IPO List
           </div>
@@ -93,7 +113,6 @@
         <script>
           function toggleElement(elementId, hideDetail = false) {
             const selectedElement = document.getElementById(elementId);
-
             // Hide all top-level elements (tables and divs)
             const allElements = document.querySelectorAll(
               "table.toggle-target, .toggle-div, .new-div"
@@ -111,8 +130,6 @@
               selectedElement.classList.remove("hidden");
             }
           }
-
-          
         </script>
 
         <div class="bg-white mt-5 text-[16px] w-full rounded-[20px] px-10 py-5">
@@ -122,18 +139,46 @@
           opportunities to invest in new market entrants.
         </div>
       </div>
-      <div class="">
-        <img
-          src="assets/images/Upstox Promo@2x.png"
-          alt=""
-          class="w-full h-full max-h-[422px]"
-        />
+
+      <!-- Right Section with Image -->
+      <div class="w-full sm:w-1/2 lg:w-1/4 md:w-1/3">
+        <a href="https://upstox.com/open-demat-account/?f=KT7366">
+          <img
+            src="assets/images/Upstox Promo@2x.png"
+            alt="Upstox Promo"
+            class="w-full h-auto object-contain"
+          />
+        </a>
       </div>
     </div>
 
+    <script>
+      function toggleElement(elementId, hideDetail = false) {
+        const selectedElement = document.getElementById(elementId);
+
+        // Hide all top-level elements (tables and divs)
+        const allElements = document.querySelectorAll(
+          "table.toggle-target, .toggle-div, .new-div"
+        );
+        allElements.forEach((element) => element.classList.add("hidden"));
+
+        // If the hideDetail flag is set to true, hide the detail div (dynamically created one)
+        if (hideDetail) {
+          const detailDiv = document.querySelector(".new-div");
+          if (detailDiv) detailDiv.classList.add("hidden");
+        }
+
+        // Show the selected element if it exists
+        if (selectedElement) {
+          selectedElement.classList.remove("hidden");
+        }
+      }
+    </script>
+
     <div class="bg-white p-10 rounded-[20px] mt-5">
-      <div class="flex justify-between">
-        <div class="flex gap-2.5">
+      <div class="flex flex-wrap justify-between gap-4">
+        <!-- Left Section with Buttons -->
+        <div class="flex flex-wrap gap-2.5 w-full sm:w-auto">
           <div
             class="cursor-pointer px-4 py-2 hover:bg-[#F7F7F7] rounded-sm border border-[#F7F7F7] text-[16px] leading-6 font-medium"
           >
@@ -170,11 +215,17 @@
             Listed
           </div>
         </div>
+
+        <!-- Right Section with Refresh Button -->
         <div
-          class="cursor-pointer flex gap-2.5 px-4 py-2 border border-[#012345] rounded-sm"
+          class="cursor-pointer flex items-center gap-2.5 px-4 py-2 border border-[#012345] rounded-sm mt-2 sm:mt-0"
         >
           <div>Refresh</div>
-          <img src="assets/images/Icon General (2).png" alt="" class="" />
+          <img
+            src="assets/images/Icon General (2).png"
+            alt=""
+            class="w-5 h-5"
+          />
         </div>
       </div>
 
@@ -184,291 +235,61 @@
       >
         <thead class="bg-[#F1FCFA]">
           <tr>
+            <th class="text-[#1A1A1A] text-[14px] font-medium p-2">Company</th>
+            <th class="text-[#1A1A1A] text-[14px] font-medium p-2">Status</th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden md:table-cell"
             >
-              Company
+              Price Range (₹)
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden md:table-cell"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Status
+              IPO Size (₹) (in Cr.)
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden lg:table-cell"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Price Range (₹)
+              LOT
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden lg:table-cell"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> IPO Size (₹) (in Cr.)
+              Opening Date
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden lg:table-cell"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> LOT
+              Closing Date
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden xl:table-cell"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+              Allotment Date
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="text-[#1A1A1A] text-[14px] font-medium p-2 hidden xl:table-cell"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </th>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Allotment Date
-            </th>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+              Listing Date
             </th>
           </tr>
         </thead>
+
         <tbody>
-          <tr class="border-b border-transparent">
+          <tr class="border-b">
             <td class="p-2">Company</td>
             <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
+              <span class="rounded-full statusBadge bg-opacity-30 py-1 px-2"
+                >Open</span
+              >
             </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-          </tr>
-          <tr class="border-b border-transparent">
-            <td class="p-2">Company</td>
-            <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-          </tr>
-          <tr class="border-b border-transparent">
-            <td class="p-2">Company</td>
-            <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-          </tr>
-          <tr class="border-b border-transparent">
-            <td class="p-2">Company</td>
-            <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-          </tr>
-          <tr class="border-b border-transparent">
-            <td class="p-2">Company</td>
-            <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-          </tr>
-          <tr class="border-b border-transparent">
-            <td class="p-2">Company</td>
-            <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-          </tr>
-          <tr class="border-b border-transparent">
-            <td class="p-2">Company</td>
-            <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
+            <td class="p-2 hidden md:table-cell">₹100-₹200</td>
+            <td class="p-2 hidden md:table-cell">500 Cr</td>
+            <td class="p-2 hidden lg:table-cell">100</td>
+            <td class="p-2 hidden lg:table-cell">01-02-2025</td>
+            <td class="p-2 hidden lg:table-cell">05-02-2025</td>
+            <td class="p-2 hidden xl:table-cell">10-02-2025</td>
+            <td class="p-2 hidden xl:table-cell">15-02-2025</td>
           </tr>
         </tbody>
 
@@ -512,110 +333,86 @@
       >
         <thead class="bg-[#F1FCFA]">
           <tr>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
               Company
             </th>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Status
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
+              Status
+            </th>
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
+              Bid Date
+            </th>
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
+              IPO Size (₹)
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Bid Date
+              IPO Price (₹)
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> IPO Size (₹) (in Cr.)
+              LOT
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> IPO Price (₹)
+              QIB
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> LOT
+              SHNI
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> QIB
+              BHNI
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> SHNI
+              NNI
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> BHNI
+              RII
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> NNI
+              Total
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> RII
-            </th>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Total
-            </th>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+              Closing Date
             </th>
           </tr>
         </thead>
+
         <tbody>
           <tr class="border-b border-transparent">
             <td class="p-2">Company</td>
             <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
+              <span
+                class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
+                >Open</span
+              >
             </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-            </td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
+            <td class="p-2">Opening Date</td>
+            <td class="p-2">Closing Date</td>
+            <td class="hidden lg:table-cell p-2">Listing Date</td>
+            <td class="hidden lg:table-cell p-2">Issue Price</td>
+            <td class="hidden lg:table-cell p-2">Lot Size</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
           </tr>
         </tbody>
 
@@ -659,98 +456,86 @@
       >
         <thead class="bg-[#F1FCFA]">
           <tr>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
               Company
             </th>
-            <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Status
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
+              Status
+            </th>
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
+              Bid Date
+            </th>
+            <th class="text-[#1A1A1A] text-sm md:text-base font-medium p-2">
+              IPO Size (₹)
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Price Range (₹)
+              IPO Price (₹)
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span>GMP
+              LOT
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span>Est. Listing
+              QIB
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> IPO Size (₹) (in Cr.)
+              SHNI
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> LOT
+              BHNI
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+              NNI
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+              RII
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Allotment Date
+              Total
             </th>
             <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+              class="hidden lg:table-cell text-[#1A1A1A] text-sm md:text-base font-medium p-2"
             >
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+              Closing Date
             </th>
-            <!-- <th
-              class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-            >
-              <span class="text-[#D1D1D1] px-4">|</span> Last Updated
-            </th> -->
           </tr>
         </thead>
+
         <tbody>
           <tr class="border-b border-transparent">
             <td class="p-2">Company</td>
             <td class="p-2">
-              <div class="flex items-center">
-                <span class="text-[#D1D1D1] px-4">|</span>
-                <span
-                  class="rounded-full statusBadg text-center bg-opacity-30 w-full py-1 px-2"
-                >
-                  Open
-                </span>
-              </div>
+              <span
+                class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
+                >Open</span
+              >
             </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-            </td>
-            <td class="p-2">
-              <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-            </td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
-            <td class="p-2"><span class="text-[#D1D1D1] px-4">|</span> Lot</td>
+            <td class="p-2">Opening Date</td>
+            <td class="p-2">Closing Date</td>
+            <td class="hidden lg:table-cell p-2">Listing Date</td>
+            <td class="hidden lg:table-cell p-2">Issue Price</td>
+            <td class="hidden lg:table-cell p-2">Lot Size</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
+            <td class="hidden lg:table-cell p-2">Lot</td>
           </tr>
         </tbody>
 
@@ -792,7 +577,6 @@
         id="ipoAnalysisButton"
         class="hidden toggle-div table-auto w-full text-left mt-5 flex justify-between gap-4"
       >
-        <!-- Company Details Section -->
         <div class="w-full md:w-[40%]">
           <h2 class="text-2xl font-semibold text-[#012345] mb-2">
             Company Detail
@@ -810,7 +594,6 @@
                 <tr class="bg-[#F7F7F7]">
                   <td class="px-4 py-2 border">ABC Technology PVT. LTD.</td>
                   <td class="px-4 py-2 border">Jan 20, 2025 - Jan 25, 2025</td>
-                  <!-- Button in table to show the new div -->
                   <td class="px-4 py-2 border text-[#2563EB] cursor-pointer">
                     <a
                       href="javascript:void(0)"
@@ -819,13 +602,11 @@
                     >
                   </td>
                 </tr>
-                <!-- Repeat rows as necessary -->
               </tbody>
             </table>
           </div>
         </div>
 
-        <!-- IPO Review Section -->
         <div class="w-full md:w-[60%]">
           <div class="flex justify-end items-center mb-2">
             <h2 class="text-2xl font-semibold text-[#012345]">IPO Review</h2>
@@ -886,11 +667,18 @@
         id="companyDetailDiv"
         class="hidden new-div p-10 rounded-[20px] mt-5"
       >
-        <div class="">IPO Analysis > <span class="text-[#2563EB]">ABC Technology PVT. LTD.</span></div>
-        <div class="bg-white px-10 py-5 ">
-          <div class="flex gap-5 ">
-            <img src="assets/images/Company Logo.png" alt="" class="w-40 h-40" />
-            <div>
+        <div class="">
+          IPO Analysis >
+          <span class="text-[#2563EB]">ABC Technology PVT. LTD.</span>
+        </div>
+        <div class="bg-white px-5 py-5 sm:px-10 sm:py-5">
+          <div class="flex flex-col sm:flex-row gap-5">
+            <img
+              src="assets/images/Company Logo.png"
+              alt=""
+              class="w-full sm:w-40 h-40 object-contain"
+            />
+            <div class="mt-5 sm:mt-0">
               Stallion India IPO is a book built issue of Rs 199.45 crores. The
               issue is a combination of fresh issue of 1.79 crore shares
               aggregating to Rs 160.73 crores and offer for sale of 0.43 crore
@@ -910,228 +698,134 @@
             listing date fixed as Thursday, January 23, 2025. Stallion India IPO
             price band is set at ₹85 to ₹90 per share. The minimum lot size for
             an application is 165. The minimum amount of investment required by
-            retail investors is ₹14,850. The minimum lot size investment for
-            sNII is 14 lots (2,310 shares), amounting to ₹2,07,900, and for
-            bNII, it is 68 lots (11,220 shares), amounting to ₹10,09,800. Sarthi
-            Capital Advisors Private Limited is the book running lead manager of
-            the Stallion India IPO, while Bigshare Services Pvt Ltd is the
-            registrar for the issue. Refer to Stallion India IPO RHP for
-            detailed information.
+            retail investors is ₹14,850.
           </div>
         </div>
-        <div class="flex w-full ">
-          <div class="w-1/2">
-            <div class="p-5">
-              <div>
-                <div class="text-2xl font-semibold text-[#012345]">IPO Details</div>
-                <div class="text-[14px] leading-5 ">Investors can bid for a minimum of 165 shares and in multiples thereof.</div>
+        <div class="flex flex-col sm:flex-row w-full mt-5">
+          <div class="w-full sm:w-1/2 p-5">
+            <div>
+              <div class="text-2xl font-semibold text-[#012345]">
+                IPO Details
               </div>
-              <div class="mt-5">
-                <table class="w-full border-collapse">
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                </table>
-                
+              <div class="text-[14px] leading-5">
+                Investors can bid for a minimum of 165 shares and in multiples
+                thereof.
               </div>
             </div>
-            <div class="p-5">
-              <div>
-                <div class="text-2xl font-semibold text-[#012345]">IPO Details</div>
-                <div class="text-[14px] leading-5 ">Investors can bid for a minimum of 165 shares and in multiples thereof.</div>
-              </div>
-              <div class="mt-5">
-                <table class="w-full border-collapse">
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                </table>
-                
-              </div>
-            </div>
-            <div class="p-5">
-              <div>
-                <div class="text-2xl font-semibold text-[#012345]">IPO Details</div>
-                <div class="text-[14px] leading-5 ">Investors can bid for a minimum of 165 shares and in multiples thereof.</div>
-              </div>
-              <div class="mt-5">
-                <table class="w-full border-collapse">
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                </table>
-                
-              </div>
+            <div class="mt-5">
+              <table class="w-full border-collapse">
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
-          <div class="w-1/2">
-            <div class="p-5">
-              <div>
-                <div class="text-2xl font-semibold text-[#012345]">IPO Details</div>
-                <div class="text-[14px] leading-5 ">Investors can bid for a minimum of 165 shares and in multiples thereof.</div>
+          <div class="w-full sm:w-1/2 p-5">
+            <div>
+              <div class="text-2xl font-semibold text-[#012345]">
+                IPO Details
               </div>
-              <div class="mt-5">
-                <table class="w-full border-collapse">
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                </table>
-                
+              <div class="text-[14px] leading-5">
+                Investors can bid for a minimum of 165 shares and in multiples
+                thereof.
               </div>
             </div>
-            <div class="p-5">
-              <div>
-                <div class="text-2xl font-semibold text-[#012345]">IPO Details</div>
-                <div class="text-[14px] leading-5 ">Investors can bid for a minimum of 165 shares and in multiples thereof.</div>
+            <div class="mt-5">
+              <table class="w-full border-collapse">
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row w-full mt-5">
+          <div class="w-full sm:w-1/2 p-5">
+            <div>
+              <div class="text-2xl font-semibold text-[#012345]">
+                IPO Details
               </div>
-              <div class="mt-5">
-                <table class="w-full border-collapse">
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                </table>
-                
+              <div class="text-[14px] leading-5">
+                Investors can bid for a minimum of 165 shares and in multiples
+                thereof.
               </div>
             </div>
-            <div class="p-5">
-              <div>
-                <div class="text-2xl font-semibold text-[#012345]">IPO Details</div>
-                <div class="text-[14px] leading-5 ">Investors can bid for a minimum of 165 shares and in multiples thereof.</div>
+            <div class="mt-5">
+              <table class="w-full border-collapse">
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 p-5">
+            <div>
+              <div class="text-2xl font-semibold text-[#012345]">
+                IPO Details
               </div>
-              <div class="mt-5">
-                <table class="w-full border-collapse">
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                  <tr>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Opening Date</td>
-                    <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">Jan 16, 2025</td>
-                  </tr>
-                </table>
-                
+              <div class="text-[14px] leading-5">
+                Investors can bid for a minimum of 165 shares and in multiples
+                thereof.
               </div>
+            </div>
+            <div class="mt-5">
+              <table class="w-full border-collapse">
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Opening Date
+                  </td>
+                  <td class="bg-[#F7F7F7] text-[16px] leading-6 px-4 py-2">
+                    Jan 16, 2025
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -1153,59 +847,72 @@
       </div>
     </div>
 
-    <div class="mt-10 mb-10 flex flex-col items-center w-full">
-      <div class="text-[30px] text-[#2563EB] font-[700] text-center">
+    <div class="mt-10 mb-10 flex flex-col items-center w-full px-4">
+      <!-- Title -->
+      <div
+        class="text-[24px] sm:text-[30px] text-[#2563EB] font-bold text-center"
+      >
         Stay Connected, Stay Updated
       </div>
+
+      <!-- Divider -->
       <div
-        class="h-[.5px] border-[1px] border-[#2363EB] w-[200px] mx-auto"
+        class="h-[1px] border border-[#2363EB] w-[150px] sm:w-[200px] my-2"
       ></div>
+
+      <!-- Description -->
       <div
-        class="mt-7 text-[#1A1A1A] font-medium text-[16px] max-w-[700px] text-center"
+        class="mt-4 text-[#1A1A1A] font-medium text-[14px] sm:text-[16px] max-w-[90%] sm:max-w-[700px] text-center"
       >
         At Finnpick, we provide timely stock market updates. Have questions,
         feedback, or need assistance? We’re here to help!
       </div>
-      <div class="flex items-center gap-3 mt-7 cursor-pointer">
+
+      <!-- Contact Options -->
+      <div
+        class="flex flex-col sm:flex-row items-center gap-5 mt-6 cursor-pointer w-full justify-center"
+      >
+        <!-- WhatsApp -->
         <a
           href="https://wa.me/919898989898"
           target="_blank"
           rel="noopener noreferrer"
+          class="w-full sm:w-auto"
         >
           <div
-            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+            class="flex items-center gap-4 border-2 border-white bg-white p-4 rounded-lg hover:border-[#2363EB] shadow-md"
           >
             <img
               src="assets/images/social icons (5).png"
-              alt=""
-              class="h-[75px] w-[75px]"
+              alt="WhatsApp"
+              class="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]"
             />
-
-            <div class="mt-2">
-              <div class="text-[#1A1A1A] text-[12px]">
+            <div class="mt-1">
+              <div class="text-[#1A1A1A] text-[12px] sm:text-[14px]">
                 Chat with Us on WhatsApp
               </div>
-              <div class="text-[#2563EB] text-[20px] font-[700]">
+              <div class="text-[#2563EB] text-[16px] sm:text-[20px] font-bold">
                 +91 98989 89898
               </div>
             </div>
           </div>
         </a>
 
-        <a href="mailto:info@finnpick.com">
+        <!-- Email -->
+        <a href="mailto:info@finnpick.com" class="w-full sm:w-auto">
           <div
-            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+            class="flex items-center gap-4 border-2 border-white bg-white p-4 rounded-lg hover:border-[#2363EB] shadow-md"
           >
             <img
               src="assets/images/social icons.png"
-              alt=""
-              class="h-[75px] w-[75px]"
+              alt="Email"
+              class="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]"
             />
-            <div class="mt-2">
-              <div class="text-[#1A1A1A] text-[12px]">
+            <div class="mt-1">
+              <div class="text-[#1A1A1A] text-[12px] sm:text-[14px]">
                 Email Us Your Queries
               </div>
-              <div class="text-[#2563EB] text-[20px] font-[700]">
+              <div class="text-[#2563EB] text-[16px] sm:text-[20px] font-bold">
                 info@finnpick.com
               </div>
             </div>
@@ -1214,48 +921,64 @@
       </div>
     </div>
 
-    <footer class="bg-white mt-5 w-full px-20 pt-24 pb-10 rounded-lg">
-      <nav class="flex justify-between items-center t">
-        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
-        <ul class="flex gap-8">
+    <footer
+      class="bg-white mt-5 w-full px-6 sm:px-10 md:px-20 pt-16 pb-8 rounded-lg"
+    >
+      <!-- Navigation -->
+      <nav class="flex flex-col sm:flex-row justify-between items-center">
+        <img
+          src="assets/images/Logo.png"
+          alt="Finpick Logo"
+          class="h-10 sm:h-12 mb-4 sm:mb-0"
+        />
+
+        <ul class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-center">
           <li>
             <a
               href="index.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >Home</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="ipo-updates.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >IPO</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              IPO
+            </a>
           </li>
           <li>
             <a
               href="about.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >FAQs</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              FAQs
+            </a>
           </li>
           <li>
             <a
               href="contact.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >Contact</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
-      <div class="flex gap-6 items-center mt-5">
-        <a href=""
+
+      <!-- Social Icons -->
+      <div
+        class="flex justify-center sm:justify-start gap-4 sm:gap-6 items-center mt-6"
+      >
+        <a href="#"
           ><img
             src="assets/images/social icons (1).png"
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/social icons (2).png"
             alt=""
@@ -1267,13 +990,13 @@
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/Clip path group.png"
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/social icons (4).png"
             alt=""
@@ -1281,18 +1004,28 @@
         /></a>
       </div>
 
-      <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
-      <div class="text-[#1A1A1A] text-[12px] font-[400]">
+      <!-- Disclaimer -->
+      <div
+        class="text-[#1A1A1A] text-[12px] font-medium mt-6 text-center sm:text-left"
+      >
+        <strong>Disclaimer:</strong>
+      </div>
+      <div
+        class="text-[#1A1A1A] text-[12px] font-light text-center sm:text-left mt-2 max-w-[90%] sm:max-w-[700px] mx-auto sm:mx-0"
+      >
         FINNPICK is not a SEBI-registered advisor. The information provided on
-        this platform are sourced from reliable outlets such as NSE and BSE, is
-        for informational purposes only and should not be considered as
+        this platform is sourced from reliable outlets such as NSE and BSE, and
+        is for informational purposes only. It should not be considered
         investment advice. Investments, including IPOs, are subject to market
         risks. Please conduct thorough research or consult a certified financial
         advisor before making investment decisions.
       </div>
-      <div class="border-[1px] border-#D1D1D1 mt-5"></div>
 
-      <div class="text-[#1A1A1A] text-center mt-8 text-[12px] font-[400]">
+      <!-- Divider -->
+      <div class="border-t border-gray-300 mt-6"></div>
+
+      <!-- Copyright -->
+      <div class="text-[#1A1A1A] text-center mt-6 text-[12px] font-light">
         © 2025 Finnpick. All rights reserved.
       </div>
     </footer>

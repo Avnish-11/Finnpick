@@ -24,32 +24,40 @@
     </header>
 
     <div
-      class="h-[530px] w-full flex justify-between p-8 bg-white rounded-lg mt-7"
+      class="h-auto w-full flex flex-col lg:flex-row justify-between p-8 bg-white rounded-lg mt-7"
     >
-      <div class="max-w-[730px]">
-        <div class="text-[40px] font-bold leading-[60px] mb-4 text-[#012345]">
+      <div class="lg:max-w-[730px] w-full">
+        <div
+          class="text-[32px] lg:text-[40px] font-bold leading-[45px] lg:leading-[60px] mb-4 text-[#012345]"
+        >
           Discover the hottest IPOs this week
         </div>
-        <div class="mb-4">
+        <div class="mb-4 text-[16px] lg:text-[18px]">
           Take the first step toward financial growth by opening your Demat
           account with us. Simplify your trading and investing experience with a
           secure, user-friendly platform tailored for modern investors.
         </div>
-        <div class="flex gap-4">
+        <div class="flex gap-4 flex-wrap">
           <div
-            class="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex justify-between items-center font-medium text-[18px]"
+            class="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex justify-between items-center font-medium text-[16px] lg:text-[18px]"
           >
             Explore IPOs
           </div>
           <div
-            class="border-2 border-[#F59E0B] text-[#F59E0B] py-2 px-6 rounded-md cursor-pointer hover:bg-[#F59E0B] hover:text-white font-medium text-[18px]"
+            class="border-2 border-[#F59E0B] text-[#F59E0B] py-2 px-6 rounded-md cursor-pointer hover:bg-[#F59E0B] hover:text-white font-medium text-[16px] lg:text-[18px]"
           >
             Learn More
           </div>
         </div>
-        <a href="https://wa.me/919898989898" target="_blank" rel="noopener noreferrer">
-          <div class="w-full max-w-[165px] bg-[#F1FCFA] mt-10 h-[66px] p-2 rounded-2xl flex flex-col justify-centre items-start">
-            <div class=" text-[14px] font-medium text-[#1A1A1A]">
+        <a
+          href="https://wa.me/919898989898"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div
+            class="w-full max-w-[165px] bg-[#F1FCFA] mt-6 lg:mt-10 h-[66px] p-2 rounded-2xl flex flex-col justify-center items-start"
+          >
+            <div class="text-[14px] font-medium text-[#1A1A1A]">
               Chat with us!
             </div>
             <div class="flex mt-2 gap-2">
@@ -58,7 +66,7 @@
                 alt=""
                 class="h-[20px] w-[20px] rounded-full bg-white"
               />
-              <div class="text-[14px] font-medium text-[#012345 font-medium]">
+              <div class="text-[14px] font-medium text-[#012345]">
                 +91 98989 89898
               </div>
             </div>
@@ -66,245 +74,119 @@
         </a>
       </div>
 
-      <div class="">
+      <div
+        class="relative w-full 2xl:w-[50%] flex justify-center items-center mt-6 lg:mt-0"
+      >
         <img
           src="assets/images/Illustration.png"
           alt="Illustration"
-          class="w-full"
+          class="w-[80%] sm:w-[70%] md:w-[60%] lg:w-full max-w-[500px]"
         />
         <img
           src="assets/images/Floating Card.png"
           alt="Floating Card"
-          class="absolute top-[434px] right-[480px]"
+          class="absolute top-[60%] left-[5%] sm:left-[-5%] md:left-[5%] lg:left-[-5%] xl:left-[2%] -translate-x-[15%] w-[40%] sm:w-[35%] md:w-[30%] lg:w-[50%] max-w-[250px]"
         />
       </div>
     </div>
 
-    <div class="bg-white mt-5 p-10">
-      <div class="flex justify-between items-center">
-        <div class="">
-          <div class="text-[40px] font-bold leading-[40px] text-[#012345]">
+    <div class="bg-white mt-5 p-6 md:p-10 rounded-lg">
+      <!-- Header Section -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+      >
+        <div>
+          <div
+            class="text-2xl md:text-4xl font-bold text-[#012345] leading-tight"
+          >
             Latest IPO Updates
           </div>
-          <div class="text-[20px] leading-[60px] text-gray-500">
+          <div class="text-base md:text-lg text-gray-500">
             Stay informed about the latest IPOs in the market.
           </div>
         </div>
         <div
-          class="bg-blue-500 text-white py-4 px-8 rounded-md cursor-pointer flex justify-between items-center"
+          class="bg-blue-500 text-white py-3 px-6 md:py-4 md:px-8 rounded-md cursor-pointer text-center"
         >
           Explore All IPOs
         </div>
       </div>
 
-      <div class="mt-10">
+      <!-- Table Section -->
+      <div class="mt-6 md:mt-10 overflow-x-auto">
         <table class="table-auto w-full text-left border-collapse">
           <thead class="bg-[#F1FCFA]">
             <tr>
+              <th class="p-3 text-sm font-medium text-[#1A1A1A]">Company</th>
               <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+                class="p-3 text-sm font-medium text-[#1A1A1A] hidden sm:table-cell"
               >
-                Company
+                Opening Date
               </th>
               <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+                class="p-3 text-sm font-medium text-[#1A1A1A] hidden sm:table-cell"
               >
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
+                Closing Date
               </th>
               <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+                class="p-3 text-sm font-medium text-[#1A1A1A] hidden md:table-cell"
               >
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
+                Listing Date
               </th>
               <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+                class="p-3 text-sm font-medium text-[#1A1A1A] hidden lg:table-cell"
               >
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
+                Issue Price
               </th>
               <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
+                class="p-3 text-sm font-medium text-[#1A1A1A] hidden xl:table-cell"
               >
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
+                Lot Size
               </th>
-              <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-              >
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </th>
-              <th
-                class="text-[#1A1A1A] text-[14px] leading-[21px] font-medium p-2"
-              >
-                <span class="text-[#D1D1D1] px-4">|</span> Status
-              </th>
+              <th class="p-3 text-sm font-medium text-[#1A1A1A]">Status</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="border-b border-transparent">
-              <td class="p-2">Company</td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </td>
-              <td class="p-2">
-                <div class="flex items-center">
-                  <span class="text-[#D1D1D1] px-4">|</span>
-                  <span
-                    class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                  >
-                    Open
-                  </span>
-                </div>
+            <tr class="border-b border-gray-200">
+              <td class="p-3">Company A</td>
+              <td class="p-3 hidden sm:table-cell">01 Jan 2025</td>
+              <td class="p-3 hidden sm:table-cell">05 Jan 2025</td>
+              <td class="p-3 hidden md:table-cell">10 Jan 2025</td>
+              <td class="p-3 hidden lg:table-cell">$100</td>
+              <td class="p-3 hidden xl:table-cell">10 Shares</td>
+              <td class="p-3">
+                <span
+                  class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full"
+                  >Open</span
+                >
               </td>
             </tr>
-            <tr class="border-b border-transparent">
-              <td class="p-2">Company</td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </td>
-              <td class="p-2">
-                <div class="flex items-center">
-                  <span class="text-[#D1D1D1] px-4">|</span>
-                  <span
-                    class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                  >
-                    Closed
-                  </span>
-                </div>
+            <tr class="border-b border-gray-200">
+              <td class="p-3">Company B</td>
+              <td class="p-3 hidden sm:table-cell">02 Feb 2025</td>
+              <td class="p-3 hidden sm:table-cell">07 Feb 2025</td>
+              <td class="p-3 hidden md:table-cell">12 Feb 2025</td>
+              <td class="p-3 hidden lg:table-cell">$120</td>
+              <td class="p-3 hidden xl:table-cell">15 Shares</td>
+              <td class="p-3">
+                <span
+                  class="bg-red-200 text-red-800 text-xs px-3 py-1 rounded-full"
+                  >Closed</span
+                >
               </td>
             </tr>
-            <tr class="border-b border-transparent">
-              <td class="p-2">Company</td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </td>
-              <td class="p-2">
-                <div class="flex items-center">
-                  <span class="text-[#D1D1D1] px-4">|</span>
-                  <span
-                    class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                  >
-                    Upcoming
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-transparent">
-              <td class="p-2">Company</td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </td>
-              <td class="p-2">
-                <div class="flex items-center">
-                  <span class="text-[#D1D1D1] px-4">|</span>
-                  <span
-                    class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                  >
-                    Open
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-transparent">
-              <td class="p-2">Company</td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </td>
-              <td class="p-2">
-                <div class="flex items-center">
-                  <span class="text-[#D1D1D1] px-4">|</span>
-                  <span
-                    class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                  >
-                    Open
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-transparent">
-              <td class="p-2">Company</td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Opening Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Closing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Listing Date
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Issue Price
-              </td>
-              <td class="p-2">
-                <span class="text-[#D1D1D1] px-4">|</span> Lot Size
-              </td>
-              <td class="p-2">
-                <div class="flex items-center">
-                  <span class="text-[#D1D1D1] px-4">|</span>
-                  <span
-                    class="rounded-full statusBadge text-center bg-opacity-30 w-full py-1 px-2"
-                  >
-                    Open
-                  </span>
-                </div>
+            <tr class="border-b border-gray-200">
+              <td class="p-3">Company C</td>
+              <td class="p-3 hidden sm:table-cell">03 Mar 2025</td>
+              <td class="p-3 hidden sm:table-cell">08 Mar 2025</td>
+              <td class="p-3 hidden md:table-cell">13 Mar 2025</td>
+              <td class="p-3 hidden lg:table-cell">$90</td>
+              <td class="p-3 hidden xl:table-cell">20 Shares</td>
+              <td class="p-3">
+                <span
+                  class="bg-yellow-200 text-yellow-800 text-xs px-3 py-1 rounded-full"
+                  >Upcoming</span
+                >
               </td>
             </tr>
           </tbody>
@@ -324,11 +206,12 @@
           Expert IPO insights and real-time updates to guide your investments.
         </div>
       </div>
+
       <div
-        class="p-10 justify-center items-center w-[98%] flex gap-[20px] mx-[77.5px] mt-5 mb-10"
+        class="p-10 justify-center items-center w-full max-w-[1200px] flex flex-wrap gap-[20px] mt-5 mb-10"
       >
         <div
-          class="w-[375px] h-[234px] rounded-[20px] gap-16px flex flex-col bg-white"
+          class="w-full sm:w-[48%] md:w-[30%] lg:w-[30%] xl:w-[30%] h-[234px] md:h-[280px] rounded-[20px] bg-white"
         >
           <div
             class="text-[#012345] text-[20px] font-semibold mt-[20px] mx-[20px]"
@@ -365,37 +248,37 @@
             </ol>
           </div>
         </div>
+
         <div
-          class="w-[375px] h-[234px] rounded-[20px] bg-white gap-16px flex flex-col"
+          class="w-full sm:w-[48%] md:w-[30%] lg:w-[30%] xl:w-[30%] h-[234px] md:h-[280px] rounded-[20px] bg-white"
         >
           <div
             class="text-[#012345] text-[20px] font-semibold mt-[20px] mx-[20px]"
           >
             Open a Demat Account
           </div>
-          <div class="mx-[20px] w-[300px] mt-[4px]">
+          <div class="p-5 w-full mt-[4px]">
             <div class="text-[#1A1A1A] text-[16px] font-[400]">
-              Open paperless demat account. Subscribe ipo with a single click
-              UPI based application
+              Open paperless demat account. Subscribe IPO with a single-click
+              UPI-based application.
             </div>
           </div>
 
           <div
             class="flex mt-6 px-[20px] pt-[16px] gap-[8px] justify-end items-center text-[#2563EB] cursor-pointer hover:text-[#F59E0B]"
           >
-            <a href=""
-              ><div class="font-medium text-[16px]">
-                Get your Demat Account
-              </div></a
-            >
+            <a href="">
+              <div class="font-medium text-[16px]">Get your Demat Account</div>
+            </a>
 
             <span
               class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium"
             ></span>
           </div>
         </div>
+
         <div
-          class="w-[375px] h-[234px] rounded-[20px] gap-16px flex flex-col bg-white"
+          class="w-full sm:w-[48%] md:w-[30%] lg:w-[30%] xl:w-[30%] h-[234px] md:h-[280px] rounded-[20px] bg-white"
         >
           <div
             class="text-[#012345] text-[20px] font-semibold mt-[20px] mx-[20px]"
@@ -423,9 +306,9 @@
             <div
               class="flex mt-6 px-[20px] pt-[17px] gap-[8px] justify-end items-center text-[#2563EB] cursor-pointer hover:text-[#F59E0B]"
             >
-              <a href=""
-                ><div class="font-medium text-[16px]">Know More</div></a
-              >
+              <a href="">
+                <div class="font-medium text-[16px]">Know More</div>
+              </a>
 
               <span
                 class="before:content-['>'] before:text-xl before:mr-2 text-[16px] font-medium"
@@ -436,96 +319,124 @@
       </div>
     </div>
 
-    <a href="https://upstox.com/open-demat-account/?f=KT7366"
-      ><button
-        class="w-full border-[#60108A80] border-2 rounded-[20px] flex justify-between items-center pt-[20px] pb-[20px]"
+    <a href="https://upstox.com/open-demat-account/?f=KT7366">
+      <button
+        class="w-full border-[#60108A80] border-2 rounded-[20px] flex flex-col sm:flex-row justify-between items-center p-5 sm:p-[20px]"
       >
-        <div>
-          <div class="mx-10 mt-[20px] text-2xl font-[600]">
+        <!-- Left Section -->
+        <div class="w-full sm:w-auto text-center sm:text-left">
+          <div
+            class="mx-5 sm:mx-10 mt-2 sm:mt-[20px] text-xl sm:text-2xl font-semibold"
+          >
             Create Your Demat Account Now
           </div>
-          <div class="flex items-center gap-[8px] mx-10 mt-[12px]">
+
+          <div
+            class="flex flex-col sm:flex-row items-center gap-[8px] mx-5 sm:mx-10 mt-[12px]"
+          >
             <img
               src="assets/images/Vector.png"
-              alt=""
+              alt="Check Icon"
               class="w-[16px] h-[11px]"
             />
-            <div class="text-[20px] font-[600] text-[#60108A]">
+            <div
+              class="text-[16px] sm:text-[20px] font-semibold text-[#60108A]"
+            >
               Zero Account Opening Charges
             </div>
           </div>
 
           <div
-            class="flex items-center gap-[20px] justify-center bg-[#60108A] border-2 text-white w-full h-[65px] rounded-full mx-10 mt-[12px]"
+            class="flex items-center gap-[12px] justify-center sm:justify-start bg-[#60108A] border-2 text-white w-full sm:w-auto px-6 h-[50px] sm:h-[65px] rounded-full mx-5 sm:mx-10 mt-[12px]"
           >
-            <div class="text-center text-medium text-[18px]">
+            <div class="text-center text-medium text-[16px] sm:text-[18px]">
               Open Your Demat Account in 5 mins
             </div>
-            <img src="assets/images/Icon General.png" alt="" />
+            <img
+              src="assets/images/Icon General.png"
+              alt="Arrow Icon"
+              class="w-[20px] sm:w-auto"
+            />
           </div>
         </div>
-        <div class="mr-[20px] m-[20px]">
+
+        <!-- Right Section (Image) -->
+        <div class="mt-5 sm:mt-0 sm:mr-[20px]">
           <img
             src="assets/images/channels4_profile 1.png"
-            alt=""
-            class="h-[150px] w-[150px]"
+            alt="Profile Image"
+            class="w-[100px] sm:w-[150px] h-[100px] sm:h-[150px]"
           />
-        </div></button
-    ></a>
+        </div>
+      </button>
+    </a>
 
-    <div class="mt-10 mb-10 flex flex-col items-center w-full">
-      <div class="text-[30px] text-[#2563EB] font-[700] text-center">
+    <div class="mt-10 mb-10 flex flex-col items-center w-full px-4">
+      <!-- Title -->
+      <div
+        class="text-[24px] sm:text-[30px] text-[#2563EB] font-bold text-center"
+      >
         Stay Connected, Stay Updated
       </div>
+
+      <!-- Divider -->
       <div
-        class="h-[.5px] border-[1px] border-[#2363EB] w-[200px] mx-auto"
+        class="h-[1px] border border-[#2363EB] w-[150px] sm:w-[200px] my-2"
       ></div>
+
+      <!-- Description -->
       <div
-        class="mt-7 text-[#1A1A1A] font-medium text-[16px] max-w-[700px] text-center"
+        class="mt-4 text-[#1A1A1A] font-medium text-[14px] sm:text-[16px] max-w-[90%] sm:max-w-[700px] text-center"
       >
         At Finnpick, we provide timely stock market updates. Have questions,
         feedback, or need assistance? We’re here to help!
       </div>
-      <div class="flex items-center gap-3 mt-7 cursor-pointer">
+
+      <!-- Contact Options -->
+      <div
+        class="flex flex-col sm:flex-row items-center gap-5 mt-6 cursor-pointer w-full justify-center"
+      >
+        <!-- WhatsApp -->
         <a
           href="https://wa.me/919898989898"
           target="_blank"
           rel="noopener noreferrer"
+          class="w-full sm:w-auto"
         >
           <div
-            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+            class="flex items-center gap-4 border-2 border-white bg-white p-4 rounded-lg hover:border-[#2363EB] shadow-md"
           >
             <img
               src="assets/images/social icons (5).png"
-              alt=""
-              class="h-[75px] w-[75px]"
+              alt="WhatsApp"
+              class="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]"
             />
-
-            <div class="mt-2">
-              <div class="text-[#1A1A1A] text-[12px]">
+            <div class="mt-1">
+              <div class="text-[#1A1A1A] text-[12px] sm:text-[14px]">
                 Chat with Us on WhatsApp
               </div>
-              <div class="text-[#2563EB] text-[20px] font-[700]">
+              <div class="text-[#2563EB] text-[16px] sm:text-[20px] font-bold">
                 +91 98989 89898
               </div>
             </div>
           </div>
         </a>
 
-        <a href="mailto:info@finnpick.com">
+        <!-- Email -->
+        <a href="mailto:info@finnpick.com" class="w-full sm:w-auto">
           <div
-            class="flex gap-4 border-[3px] border-white bg-white p-4 rounded-lg hover:border-[3px] hover:border-[#2363EB]"
+            class="flex items-center gap-4 border-2 border-white bg-white p-4 rounded-lg hover:border-[#2363EB] shadow-md"
           >
             <img
               src="assets/images/social icons.png"
-              alt=""
-              class="h-[75px] w-[75px]"
+              alt="Email"
+              class="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]"
             />
-            <div class="mt-2">
-              <div class="text-[#1A1A1A] text-[12px]">
+            <div class="mt-1">
+              <div class="text-[#1A1A1A] text-[12px] sm:text-[14px]">
                 Email Us Your Queries
               </div>
-              <div class="text-[#2563EB] text-[20px] font-[700]">
+              <div class="text-[#2563EB] text-[16px] sm:text-[20px] font-bold">
                 info@finnpick.com
               </div>
             </div>
@@ -534,48 +445,64 @@
       </div>
     </div>
 
-    <footer class="bg-white mt-5 w-full px-20 pt-24 pb-10 rounded-lg">
-      <nav class="flex justify-between items-center t">
-        <img src="assets/images/Logo.png" alt="Finpick Logo" class="h-12" />
-        <ul class="flex gap-8">
+    <footer
+      class="bg-white mt-5 w-full px-6 sm:px-10 md:px-20 pt-16 pb-8 rounded-lg"
+    >
+      <!-- Navigation -->
+      <nav class="flex flex-col sm:flex-row justify-between items-center">
+        <img
+          src="assets/images/Logo.png"
+          alt="Finpick Logo"
+          class="h-10 sm:h-12 mb-4 sm:mb-0"
+        />
+
+        <ul class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-center">
           <li>
             <a
               href="index.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >Home</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="ipo-updates.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >IPO</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              IPO
+            </a>
           </li>
           <li>
             <a
               href="about.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >FAQs</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              FAQs
+            </a>
           </li>
           <li>
             <a
               href="contact.html"
-              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[16px]"
-              >Contact</a
+              class="px-4 py-2 text-gray-800 rounded-md hover:bg-gray-200 text-[14px] sm:text-[16px]"
             >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
-      <div class="flex gap-6 items-center mt-5">
-        <a href=""
+
+      <!-- Social Icons -->
+      <div
+        class="flex justify-center sm:justify-start gap-4 sm:gap-6 items-center mt-6"
+      >
+        <a href="#"
           ><img
             src="assets/images/social icons (1).png"
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/social icons (2).png"
             alt=""
@@ -587,13 +514,13 @@
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/Clip path group.png"
             alt=""
             class="cursor-pointer"
         /></a>
-        <a href=""
+        <a href="#"
           ><img
             src="assets/images/social icons (4).png"
             alt=""
@@ -601,18 +528,28 @@
         /></a>
       </div>
 
-      <div class="text-[#1A1A1A] text-[12px] font-[400] mt-5">Disclaimer:</div>
-      <div class="text-[#1A1A1A] text-[12px] font-[400]">
+      <!-- Disclaimer -->
+      <div
+        class="text-[#1A1A1A] text-[12px] font-medium mt-6 text-center sm:text-left"
+      >
+        <strong>Disclaimer:</strong>
+      </div>
+      <div
+        class="text-[#1A1A1A] text-[12px] font-light text-center sm:text-left mt-2 max-w-[90%] sm:max-w-[700px] mx-auto sm:mx-0"
+      >
         FINNPICK is not a SEBI-registered advisor. The information provided on
-        this platform are sourced from reliable outlets such as NSE and BSE, is
-        for informational purposes only and should not be considered as
+        this platform is sourced from reliable outlets such as NSE and BSE, and
+        is for informational purposes only. It should not be considered
         investment advice. Investments, including IPOs, are subject to market
         risks. Please conduct thorough research or consult a certified financial
         advisor before making investment decisions.
       </div>
-      <div class="border-[1px] border-#D1D1D1 mt-5"></div>
 
-      <div class="text-[#1A1A1A] text-center mt-8 text-[12px] font-[400]">
+      <!-- Divider -->
+      <div class="border-t border-gray-300 mt-6"></div>
+
+      <!-- Copyright -->
+      <div class="text-[#1A1A1A] text-center mt-6 text-[12px] font-light">
         © 2025 Finnpick. All rights reserved.
       </div>
     </footer>
